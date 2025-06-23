@@ -1,4 +1,56 @@
 [
+  {
+        "symbol": "NIFTY",
+        "token": "99926000",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "BANKNIFTY",
+        "token": "99926009",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "FINNIFTY",
+        "token": "99926052",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "MIDCPNIFTY",
+        "token": "99926045",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYIT",
+        "token": "99926034",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYAUTO",
+        "token": "99926036",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYFMCG",
+        "token": "99926022",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYMETAL",
+        "token": "99926028",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYPHARMA",
+        "token": "99926029",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYREALTY",
+        "token": "99926035",
+        "exchange": "NSE"
+    }
+
+
     {
         "symbol": "ARE&M-EQ",
         "token": "100",

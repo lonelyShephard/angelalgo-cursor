@@ -1,4 +1,243 @@
-[
+[   {
+        "symbol": "NIFTY19JUN2525200PE",
+        "token": "51020",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2525200CE",
+        "token": "51019",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524950PE",
+        "token": "51010",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524400PE",
+        "token": "50983",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524100PE",
+        "token": "57668",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2524000CE",
+        "token": "50955",
+        "exchange": "NFO"
+    },  {
+        "symbol": "NIFTY19JUN2524650PE",
+        "token": "50996",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524700PE",
+        "token": "50998",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524650CE",
+        "token": "50995",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2524900PE",
+        "token": "51008",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524500PE",
+        "token": "50990",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524700CE",
+        "token": "50997",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524600PE",
+        "token": "50994",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2524050PE",
+        "token": "50960",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524000PE",
+        "token": "50958",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524750PE",
+        "token": "51000",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2524950CE",
+        "token": "51009",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524150CE",
+        "token": "50963",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524900CE",
+        "token": "51007",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2524850PE",
+        "token": "51004",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524550PE",
+        "token": "50992",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524750CE",
+        "token": "50999",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY19JUN2524550CE",
+        "token": "50991",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524450CE",
+        "token": "50985",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524200CE",
+        "token": "50965",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol":"NIFTY19JUN2524150PE",
+        "token": "50964",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2525150PE",
+        "token": "51018",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2525150CE",
+        "token": "51017",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY28AUG25FUT",
+        "token": "64103",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY19JUN2524850CE",
+        "token": "51003",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "NIFTY19JUN2524350PE",
+        "token": "50980",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY28AUG25FUT",
+        "token": "64103",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTY26JUN2526650PE",
+        "token": "62500",
+        "exchange": "NFO"
+    },
+    {
+        "symbol": "BANKNIFTY26JUN2548500CE",
+        "token": "57668",
+        "exchange": "NFO"
+    },   
+    {
+        "symbol": "NIFTY28AUG25FUT",
+        "token": "64103",
+        "exchange": "NFO"
+    },  
+    {
+        "symbol": "NIFTYFUTURESNEARMONTH",
+        "token": "5",
+        "exchange": "CDS"
+    },   
+
+    {
+        "symbol": "NIFTYMIDCAP100",
+        "token": "99926011",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYMIDCAP50",
+        "token": "99926014",
+        "exchange": "NSE"
+    },
+     {
+        "symbol": "NIFTY",
+        "token": "99926000",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "BANKNIFTY",
+        "token": "99926009",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "FINNIFTY",
+        "token": "99926052",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "MIDCPNIFTY",
+        "token": "99926045",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYIT",
+        "token": "99926034",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYAUTO",
+        "token": "99926036",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYFMCG",
+        "token": "99926022",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYMETAL",
+        "token": "99926028",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYPHARMA",
+        "token": "99926029",
+        "exchange": "NSE"
+    },
+    {
+        "symbol": "NIFTYREALTY",
+        "token": "99926035",
+        "exchange": "NSE"
+    },
     {
         "symbol": "ARE&M-EQ",
         "token": "100",

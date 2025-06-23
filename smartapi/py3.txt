@@ -1,0 +1,518 @@
+import pandas as pd
+import numpy as np
+from datetime import datetime, time, timedelta
+import pytz
+import warnings
+warnings.filterwarnings('ignore')
+
+class ModularIntradayStrategy:
+    def __init__(self):
+        # === STRATEGY PARAMETERS ===
+        self.start_date = "2025-01-01"
+        self.end_date = "2025-12-31"
+        self.initial_capital = 100000
+        
+        # === INPUT TOGGLES ===
+        self.use_supertrend = True
+        self.use_vwap = False
+        self.use_ema_crossover = True
+        self.use_rsi_filter = True
+        
+        # === TRADE SESSION OPTIONS ===
+        self.is_intraday = True
+        self.intraday_start_hour = 9
+        self.intraday_start_min = 15
+        self.intraday_end_hour = 15
+        self.intraday_end_min = 15
+        
+        # === INTRADAY SPECIFIC PARAMETERS ===
+        self.rsi_length = 14
+        self.rsi_overbought = 70
+        self.rsi_oversold = 30
+        
+        # === STRATEGY PARAMETERS ===
+        self.atr_len = 10
+        self.atr_mult = 3.0
+        self.fast_ema = 9
+        self.slow_ema = 21
+        
+        # === EXIT PARAMETERS ===
+        self.base_sl_points = 15
+        self.use_tiered_tp = True
+        self.tp1_points = 25
+        self.tp2_points = 45
+        self.tp3_points = 100
+        self.use_breakeven_trail = True
+        self.trail_after_tp1 = True
+        self.trail_tightness = 0.3
+        self.exit_before_close = 20  # minutes
+        self.use_end_day_momentum = False
+        self.momentum_length = 5
+        
+        # === POSITION TRACKING VARIABLES ===
+        self.position_size = 0
+        self.position_entry_price = 0
+        self.tp1_filled = 0.0
+        self.tp2_filled = 0.0
+        self.trailing_active = False
+        
+        # === RE-ENTRY TRACKING ===
+        self.last_exit_price = None
+        self.last_entry_price = None
+        self.last_exit_reason = ""
+        self.last_exit_bar = 0
+        
+        # === TIMEZONE ===
+        self.ist_tz = pytz.timezone('Asia/Kolkata')
+        
+        # === RESULTS TRACKING ===
+        self.trades = []
+        self.equity_curve = []
+        self.current_equity = self.initial_capital
+        
+    def calculate_atr(self, df, period=10):
+        """Calculate Average True Range"""
+        high_low = df['high'] - df['low']
+        high_close = np.abs(df['high'] - df['close'].shift())
+        low_close = np.abs(df['low'] - df['close'].shift())
+        
+        true_range = np.maximum(high_low, np.maximum(high_close, low_close))
+        atr = true_range.rolling(window=period).mean()
+        return atr
+    
+    def calculate_supertrend(self, df, atr_period=10, atr_mult=3.0):
+        """Calculate Supertrend indicator"""
+        atr = self.calculate_atr(df, atr_period)
+        hlc3 = (df['high'] + df['low'] + df['close']) / 3
+        
+        up = hlc3 - atr_mult * atr
+        dn = hlc3 + atr_mult * atr
+        
+        trend = pd.Series(index=df.index, dtype=int)
+        trend.iloc[0] = 1
+        
+        for i in range(1, len(df)):
+            if df['close'].iloc[i] > dn.iloc[i-1]:
+                trend.iloc[i] = 1
+            elif df['close'].iloc[i] < up.iloc[i-1]:
+                trend.iloc[i] = -1
+            else:
+                trend.iloc[i] = trend.iloc[i-1]
+                
+        return trend
+    
+    def calculate_vwap(self, df):
+        """Calculate Volume Weighted Average Price"""
+        typical_price = (df['high'] + df['low'] + df['close']) / 3
+        vwap = (typical_price * df['volume']).cumsum() / df['volume'].cumsum()
+        return vwap
+    
+    def calculate_rsi(self, series, period=14):
+        """Calculate RSI"""
+        delta = series.diff()
+        gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+        rs = gain / loss
+        rsi = 100 - (100 / (1 + rs))
+        return rsi
+    
+    def calculate_ema(self, series, period):
+        """Calculate Exponential Moving Average"""
+        return series.ewm(span=period).mean()
+    
+    def is_in_session(self, timestamp):
+        """Check if timestamp is within trading session"""
+        if not self.is_intraday:
+            return True
+            
+        ist_time = timestamp.astimezone(self.ist_tz).time()
+        start_time = time(self.intraday_start_hour, self.intraday_start_min)
+        end_time = time(self.intraday_end_hour, self.intraday_end_min)
+        
+        return start_time <= ist_time <= end_time
+    
+    def get_current_hour_minute_ist(self, timestamp):
+        """Get current hour and minute in IST"""
+        ist_time = timestamp.astimezone(self.ist_tz)
+        return ist_time.hour, ist_time.minute
+    
+    def is_near_session_end(self, timestamp):
+        """Check if we're near session end"""
+        if not self.is_intraday:
+            return False
+            
+        current_hour, current_min = self.get_current_hour_minute_ist(timestamp)
+        current_minutes = current_hour * 60 + current_min
+        end_minutes = self.intraday_end_hour * 60 + self.intraday_end_min
+        
+        time_to_end = end_minutes - current_minutes
+        return 0 < time_to_end <= self.exit_before_close
+    
+    def is_end_of_session(self, timestamp):
+        """Check if session has ended"""
+        if not self.is_intraday:
+            return False
+            
+        current_hour, current_min = self.get_current_hour_minute_ist(timestamp)
+        current_minutes = current_hour * 60 + current_min
+        end_minutes = self.intraday_end_hour * 60 + self.intraday_end_min
+        
+        return current_minutes >= end_minutes
+    
+    def should_allow_new_entries(self, timestamp):
+        """Check if new entries are allowed"""
+        if not self.is_intraday:
+            return True
+            
+        current_hour, current_min = self.get_current_hour_minute_ist(timestamp)
+        current_minutes = current_hour * 60 + current_min
+        end_minutes = self.intraday_end_hour * 60 + self.intraday_end_min
+        
+        time_to_end = end_minutes - current_minutes
+        return time_to_end > (self.exit_before_close + 30)
+    
+    def calculate_signal_strength(self, supertrend_dir, vwap_bull, ema_bull, row_idx):
+        """Calculate signal strength based on active indicators"""
+        strength = 0
+        
+        if self.use_supertrend and supertrend_dir == 1:
+            strength += 1
+        if self.use_vwap and vwap_bull:
+            strength += 1
+        if self.use_ema_crossover and ema_bull:
+            strength += 1
+            
+        return strength
+    
+    def can_reenter(self, current_price, signal_strength, bars_from_exit):
+        """Check if re-entry is allowed based on previous exit reason"""
+        if self.last_exit_price is None:
+            return True
+            
+        if self.last_exit_reason == "time":
+            return False  # No re-entry after time exit in same session
+            
+        # For stop, trail, or profit exits: need price 5 points above previous entry + 2 indicators
+        if self.last_entry_price is not None:
+            price_condition = current_price > (self.last_entry_price + 5)
+            signal_condition = signal_strength >= 2
+            return price_condition and signal_condition
+            
+        return False
+    
+    def enter_position(self, price, timestamp, reason="Buy Signal"):
+        """Enter a long position"""
+        if self.position_size == 0:
+            self.position_size = self.current_equity / price  # Use all available capital
+            self.position_entry_price = price
+            self.tp1_filled = 0.0
+            self.tp2_filled = 0.0
+            self.trailing_active = False
+            
+            print(f"ENTRY: {timestamp} - Price: {price:.2f} - Size: {self.position_size:.2f} - Reason: {reason}")
+    
+    def exit_position(self, price, timestamp, qty_percent=100, reason="Exit"):
+        """Exit position (partial or full)"""
+        if self.position_size > 0:
+            exit_qty = self.position_size * (qty_percent / 100)
+            exit_value = exit_qty * price
+            
+            # Calculate P&L
+            entry_value = exit_qty * self.position_entry_price
+            pnl = exit_value - entry_value
+            self.current_equity += pnl
+            
+            # Update position
+            self.position_size -= exit_qty
+            
+            # Record trade
+            trade = {
+                'entry_time': timestamp,
+                'exit_time': timestamp,
+                'entry_price': self.position_entry_price,
+                'exit_price': price,
+                'quantity': exit_qty,
+                'pnl': pnl,
+                'reason': reason,
+                'qty_percent': qty_percent
+            }
+            self.trades.append(trade)
+            
+            print(f"EXIT: {timestamp} - Price: {price:.2f} - Qty%: {qty_percent}% - PnL: {pnl:.2f} - Reason: {reason}")
+            
+            # Track last exit for re-entry logic
+            if qty_percent == 100 or self.position_size <= 0:
+                self.last_exit_price = price
+                self.last_entry_price = self.position_entry_price
+                self.position_size = 0
+                self.tp1_filled = 0.0
+                self.tp2_filled = 0.0
+                self.trailing_active = False
+    
+    def classify_exit_reason(self, exit_price, entry_price):
+        """Classify why the trade was exited"""
+        trade_points = exit_price - entry_price
+        
+        if trade_points <= -(self.base_sl_points * 0.9):
+            return "stop"
+        elif trade_points >= (self.tp2_points * 0.8):
+            return "profit"
+        elif trade_points >= (self.tp1_points * 0.8):
+            return "trail"
+        else:
+            return "other"
+    
+    def run_strategy(self, df):
+        """Main strategy execution function"""
+        print("Starting strategy execution...")
+        
+        # Ensure datetime index
+        if not isinstance(df.index, pd.DatetimeIndex):
+            df.index = pd.to_datetime(df.index)
+        
+        # Add timezone info if not present
+        if df.index.tz is None:
+            df.index = df.index.tz_localize('UTC')
+        
+        # Calculate indicators
+        print("Calculating indicators...")
+        df['atr'] = self.calculate_atr(df, self.atr_len)
+        df['supertrend'] = self.calculate_supertrend(df, self.atr_len, self.atr_mult)
+        df['vwap'] = self.calculate_vwap(df)
+        df['rsi'] = self.calculate_rsi(df['close'], self.rsi_length)
+        df['ema_fast'] = self.calculate_ema(df['close'], self.fast_ema)
+        df['ema_slow'] = self.calculate_ema(df['close'], self.slow_ema)
+        
+        # Calculate derived signals
+        df['vwap_bull'] = df['close'] > df['vwap']
+        df['ema_crossover'] = (df['ema_fast'] > df['ema_slow']) & (df['ema_fast'].shift() <= df['ema_slow'].shift())
+        df['ema_bull'] = df['ema_crossover']  # Simplified for this example
+        
+        # Higher timeframe trend (simplified - using same timeframe EMA50)
+        df['htf_trend'] = self.calculate_ema(df['close'], 50)
+        df['htf_bullish'] = df['close'] > df['htf_trend']
+        
+        print("Running strategy logic...")
+        
+        for i, (timestamp, row) in enumerate(df.iterrows()):
+            # Skip initial rows with NaN values
+            if i < max(self.atr_len, self.rsi_length, self.slow_ema):
+                continue
+            
+            # Date range filter
+            if timestamp < pd.Timestamp(self.start_date) or timestamp > pd.Timestamp(self.end_date):
+                continue
+            
+            # Session filter
+            in_session = self.is_in_session(timestamp)
+            if not in_session:
+                continue
+            
+            # Current values
+            current_price = row['close']
+            supertrend_dir = row['supertrend']
+            vwap_bull = row['vwap_bull']
+            ema_bull = row['ema_bull']
+            rsi_val = row['rsi']
+            htf_bullish = row['htf_bullish']
+            
+            # Filters
+            rsi_filter = not self.use_rsi_filter or (rsi_val > self.rsi_oversold and rsi_val < self.rsi_overbought)
+            market_structure_filter = htf_bullish
+            
+            # Buy signal logic
+            buy_signal = (
+                (not self.use_supertrend or supertrend_dir == 1) and
+                (not self.use_vwap or vwap_bull) and
+                (not self.use_ema_crossover or ema_bull)
+            )
+            
+            intraday_buy_signal = buy_signal and rsi_filter and market_structure_filter
+            
+            # Signal strength for re-entry
+            signal_strength = self.calculate_signal_strength(supertrend_dir, vwap_bull, ema_bull, i)
+            bars_from_exit = i - self.last_exit_bar
+            
+            # Re-entry logic
+            can_reenter = self.can_reenter(current_price, signal_strength, bars_from_exit)
+            
+            # Entry conditions
+            allow_new_entries = self.should_allow_new_entries(timestamp)
+            late_entry_check = self.is_intraday and timestamp.hour >= 14 and timestamp.minute >= 30
+            
+            # ENTRY LOGIC
+            if (intraday_buy_signal and can_reenter and self.position_size == 0 and 
+                allow_new_entries and not late_entry_check):
+                self.enter_position(current_price, timestamp)
+            
+            # EXIT LOGIC
+            if self.position_size > 0:
+                entry_price = self.position_entry_price
+                stop_price = entry_price - self.base_sl_points
+                
+                # Force exit conditions
+                force_exit = False
+                force_exit_reason = ""
+                
+                if self.is_near_session_end(timestamp) or self.is_end_of_session(timestamp):
+                    force_exit = True
+                    force_exit_reason = "Time Exit - Session Ending"
+                
+                if force_exit:
+                    self.exit_position(current_price, timestamp, 100, force_exit_reason)
+                    self.last_exit_reason = "time"
+                    self.last_exit_bar = i
+                else:
+                    # Tiered exit logic
+                    if self.use_tiered_tp:
+                        tp1_price = entry_price + self.tp1_points
+                        tp2_price = entry_price + self.tp2_points
+                        tp3_price = entry_price + self.tp3_points
+                        
+                        # TP1: Take 50% profit
+                        if self.tp1_filled == 0 and current_price >= tp1_price:
+                            self.exit_position(current_price, timestamp, 50, "TP1-Quick")
+                            self.tp1_filled = tp1_price
+                            
+                            # Move to breakeven after TP1
+                            if self.use_breakeven_trail:
+                                stop_price = entry_price + 2
+                        
+                        # TP2: Take additional 30% (60% of remaining)
+                        if self.tp2_filled == 0 and current_price >= tp2_price and self.tp1_filled > 0:
+                            self.exit_position(current_price, timestamp, 60, "TP2-Medium")
+                            self.tp2_filled = tp2_price
+                            
+                            # Tighten stop after TP2
+                            if self.use_breakeven_trail:
+                                stop_price = max(stop_price, tp1_price - 5)
+                    
+                    # Stop loss check
+                    if current_price <= stop_price:
+                        self.exit_position(current_price, timestamp, 100, "Stop Loss")
+                        self.last_exit_reason = self.classify_exit_reason(current_price, entry_price)
+                        self.last_exit_bar = i
+                    
+                    # TP3 check for remaining position
+                    elif self.tp2_filled > 0 and current_price >= (entry_price + self.tp3_points):
+                        self.exit_position(current_price, timestamp, 100, "TP3-Runner")
+                        self.last_exit_reason = "profit"
+                        self.last_exit_bar = i
+            
+            # Track equity curve
+            current_equity = self.current_equity
+            if self.position_size > 0:
+                unrealized_pnl = (current_price - self.position_entry_price) * self.position_size
+                current_equity += unrealized_pnl
+            
+            self.equity_curve.append({
+                'timestamp': timestamp,
+                'equity': current_equity,
+                'position_size': self.position_size
+            })
+        
+        print("Strategy execution completed!")
+        return self.generate_results()
+    
+    def generate_results(self):
+        """Generate strategy results and statistics"""
+        if not self.trades:
+            return {"error": "No trades executed"}
+        
+        trades_df = pd.DataFrame(self.trades)
+        equity_df = pd.DataFrame(self.equity_curve)
+        
+        # Calculate statistics
+        total_trades = len(trades_df)
+        winning_trades = len(trades_df[trades_df['pnl'] > 0])
+        losing_trades = len(trades_df[trades_df['pnl'] < 0])
+        win_rate = (winning_trades / total_trades) * 100 if total_trades > 0 else 0
+        
+        total_pnl = trades_df['pnl'].sum()
+        avg_win = trades_df[trades_df['pnl'] > 0]['pnl'].mean() if winning_trades > 0 else 0
+        avg_loss = trades_df[trades_df['pnl'] < 0]['pnl'].mean() if losing_trades > 0 else 0
+        
+        max_equity = equity_df['equity'].max()
+        min_equity = equity_df['equity'].min()
+        max_drawdown = ((max_equity - min_equity) / max_equity) * 100 if max_equity > 0 else 0
+        
+        final_equity = equity_df['equity'].iloc[-1] if len(equity_df) > 0 else self.initial_capital
+        total_return = ((final_equity - self.initial_capital) / self.initial_capital) * 100
+        
+        results = {
+            'total_trades': total_trades,
+            'winning_trades': winning_trades,
+            'losing_trades': losing_trades,
+            'win_rate': win_rate,
+            'total_pnl': total_pnl,
+            'avg_win': avg_win,
+            'avg_loss': avg_loss,
+            'profit_factor': abs(avg_win / avg_loss) if avg_loss != 0 else float('inf'),
+            'max_drawdown': max_drawdown,
+            'total_return': total_return,
+            'final_equity': final_equity,
+            'trades_df': trades_df,
+            'equity_df': equity_df
+        }
+        
+        return results
+
+# Example usage and testing
+def test_strategy():
+    """Test the strategy with sample data"""
+    print("Creating sample data for testing...")
+    
+    # Create sample OHLCV data
+    dates = pd.date_range(start='2025-01-01', end='2025-01-31', freq='5min')
+    dates = dates[(dates.hour >= 9) & (dates.hour <= 15)]  # Market hours
+    
+    np.random.seed(42)
+    n = len(dates)
+    
+    # Generate realistic price data
+    base_price = 1000
+    returns = np.random.normal(0, 0.002, n)  # 0.2% volatility
+    prices = base_price * np.exp(np.cumsum(returns))
+    
+    sample_data = pd.DataFrame({
+        'open': prices * (1 + np.random.normal(0, 0.001, n)),
+        'high': prices * (1 + np.abs(np.random.normal(0, 0.002, n))),
+        'low': prices * (1 - np.abs(np.random.normal(0, 0.002, n))),
+        'close': prices,
+        'volume': np.random.randint(1000, 10000, n)
+    }, index=dates)
+    
+    # Ensure OHLC consistency
+    sample_data['high'] = np.maximum.reduce([sample_data['open'], sample_data['high'], 
+                                           sample_data['low'], sample_data['close']])
+    sample_data['low'] = np.minimum.reduce([sample_data['open'], sample_data['high'], 
+                                          sample_data['low'], sample_data['close']])
+    
+    print(f"Sample data created: {len(sample_data)} rows")
+    print(f"Date range: {sample_data.index[0]} to {sample_data.index[-1]}")
+    
+    # Initialize and run strategy
+    strategy = ModularIntradayStrategy()
+    results = strategy.run_strategy(sample_data)
+    
+    if "error" not in results:
+        print("\n=== STRATEGY RESULTS ===")
+        print(f"Total Trades: {results['total_trades']}")
+        print(f"Win Rate: {results['win_rate']:.2f}%")
+        print(f"Total P&L: {results['total_pnl']:.2f}")
+        print(f"Total Return: {results['total_return']:.2f}%")
+        print(f"Max Drawdown: {results['max_drawdown']:.2f}%")
+        print(f"Profit Factor: {results['profit_factor']:.2f}")
+        print(f"Avg Win: {results['avg_win']:.2f}")
+        print(f"Avg Loss: {results['avg_loss']:.2f}")
+        
+        if len(results['trades_df']) > 0:
+            print("\n=== SAMPLE TRADES ===")
+            print(results['trades_df'][['entry_price', 'exit_price', 'pnl', 'reason']].head())
+    else:
+        print(f"Error: {results['error']}")
+    
+    return strategy, results
+
+if __name__ == "__main__":
+    strategy, results = test_strategy()

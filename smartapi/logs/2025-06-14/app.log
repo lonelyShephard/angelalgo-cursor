@@ -1,0 +1,12 @@
+[E 250614 15:53:19 fetch_data_gui:96] Historical Data fetch failed: name 'filedialog' is not defined
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 83, in fetch_historical_data
+        file_path = filedialog.asksaveasfilename(
+                    ^^^^^^^^^^
+    NameError: name 'filedialog' is not defined
+[E 250614 18:12:18 fetch_data_gui:167] Historical Data fetch failed: name 'symbols_dict' is not defined
+    Traceback (most recent call last):
+      File "C:\Users\user\projects\angelalgo\smartapi\fetch_data_gui.py", line 111, in fetch_historical_data
+        if not selected_symbol or selected_symbol not in symbols_dict:
+                                                         ^^^^^^^^^^^^
+    NameError: name 'symbols_dict' is not defined
