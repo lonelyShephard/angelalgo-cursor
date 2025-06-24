@@ -1,0 +1,733 @@
+import pandas as pd
+import numpy as np
+from datetime import datetime, time, timedelta
+import pytz
+import warnings
+warnings.filterwarnings('ignore')
+from tabulate import tabulate
+
+class ModularIntradayStrategy:
+    def __init__(self, params=None):
+        # === STRATEGY PARAMETERS ===
+        # These are mostly for backtesting, for real-time, start/end dates are less relevant
+        self.start_date = "2025-01-01" # Still useful for historical data loading if any
+        self.end_date = "2025-12-31"   # Still useful for historical data loading if any
+        self.initial_capital = 100000
+
+        # === INPUT TOGGLES ===
+        self.use_supertrend = True
+        self.use_vwap = True # Changed to True, as real-time VWAP is implemented
+        self.use_ema_crossover = True
+        self.use_rsi_filter = True
+
+        # === TRADE SESSION OPTIONS ===
+        self.is_intraday = True
+        self.intraday_start_hour = 9
+        self.intraday_start_min = 15
+        self.intraday_end_hour = 15
+        self.intraday_end_min = 15
+
+        # === INTRADAY SPECIFIC PARAMETERS ===
+        self.rsi_length = 14
+        self.rsi_overbought = 70
+        self.rsi_oversold = 30
+
+        # === STRATEGY PARAMETERS ===
+        self.atr_len = 10
+        self.atr_mult = 3.0
+        self.fast_ema = 9
+        self.slow_ema = 21
+
+        # === DUAL STOP LOSS SYSTEM ===
+        self.base_sl_points = 15
+        self.base_stop_price = 0
+        
+        self.use_trail_stop = True
+        self.trail_stop_price = 0
+        self.trail_activation_points = 25
+        self.trail_distance_points = 10
+        
+        # 3. TAKE PROFIT LEVELS
+        self.use_tiered_tp = True
+        self.tp1_points = 25
+        self.tp2_points = 45
+        self.tp3_points = 100
+        
+        # 4. SESSION END (Mandatory exit)
+        self.exit_before_close = 20  # minutes before session end
+        
+        # Deprecated parameters (keeping for compatibility)
+        self.use_breakeven_trail = False
+        self.trail_after_tp1 = False
+        self.trail_tightness = 0.3
+
+        # Additional parameters
+        self.use_end_day_momentum = False
+        self.momentum_length = 5
+
+        # === POSITION TRACKING VARIABLES ===
+        self.position_size = 0
+        self.position_entry_price = 0
+        self.position_entry_time = None
+        self.position_high_price = 0
+        self.tp1_filled = 0.0
+        self.tp2_filled = 0.0
+        self.trailing_active = False
+
+        # === RE-ENTRY TRACKING ===
+        self.last_exit_price = None
+        self.last_entry_price = None
+        self.last_exit_reason = ""
+        self.last_exit_bar_idx = -1 # Index of the bar in bar_history when last exited
+        self.last_time_exit_date = None
+
+        # === RE-ENTRY PARAMETERS ===
+        self.reentry_price_buffer = 5
+        self.reentry_momentum_lookback = 3
+        self.reentry_min_green_candles = 1
+
+        # === TIMEZONE ===
+        self.ist_tz = pytz.timezone('Asia/Kolkata')
+
+        # === RESULTS TRACKING ===
+        self.trades = []
+        self.equity_curve = []
+        self.current_equity = self.initial_capital
+
+        # === OVERRIDE WITH PARAMS ===
+        if params:
+            for k, v in params.items():
+                setattr(self, k, v)
+        
+        # === ACTION LOGGING ===
+        self.action_logs = []
+
+        # === REAL-TIME DATA MANAGEMENT ===
+        # Stores completed bars. Max length to prevent infinite memory growth.
+        # We need enough history for indicator calculations.
+        # Ensure max_bar_history_length is sufficient for all lookback periods
+        self.max_bar_history_length = max(
+            self.atr_len, self.rsi_length, self.slow_ema, 50, # 50 for HTF trend
+            self.reentry_momentum_lookback
+        ) * 2 # Add a buffer
+        
+        # Using a list of dictionaries for bar history and converting to DataFrame when needed for calculations
+        # This is more efficient for appending single rows than continually concatenating DataFrames.
+        self._bar_history_list = [] 
+        self.bar_history = pd.DataFrame(columns=['open', 'high', 'low', 'close', 'volume'])
+        self.bar_history.index.name = 'timestamp'
+
+        # Data for the bar currently being formed
+        self.current_bar_data = {
+            'open': None, 'high': None, 'low': None, 'close': None, 'volume': 0, 'timestamp': None
+        }
+        self.last_processed_minute = None # To detect minute changes
+
+        # Real-time VWAP tracking (per day)
+        self.daily_vwap_sum_tpv = 0.0
+        self.daily_vwap_sum_volume = 0.0
+        self.last_vwap_day = None
+        self.current_vwap = np.nan # Store the latest calculated VWAP
+        self.current_vwap_bull = False # Store the latest VWAP bullish state
+
+        # Supertrend state for real-time update
+        self.supertrend_trend = 1 # 1 for uptrend, -1 for downtrend
+        self.supertrend_final_upperband = None
+        self.supertrend_final_lowerband = None
+
+    # --- Helper methods for indicator calculations (adapted for real-time) ---
+    # These will now operate on the self.bar_history (converted from list) and return latest values.
+
+    def _get_bar_history_df(self):
+        """Converts the list of bar data to a DataFrame for calculations."""
+        if not self._bar_history_list:
+            return pd.DataFrame(columns=['open', 'high', 'low', 'close', 'volume'])
+        
+        df = pd.DataFrame(self._bar_history_list)
+        df.set_index('timestamp', inplace=True)
+        df.index = pd.to_datetime(df.index)
+        return df
+
+    def _calculate_atr_latest(self):
+        """Calculate ATR for the latest bar in history."""
+        temp_df = self._get_bar_history_df()
+        if len(temp_df) < self.atr_len + 1: # Need enough bars for rolling mean
+            return np.nan
+
+        high_low = temp_df['high'] - temp_df['low']
+        high_close = np.abs(temp_df['high'] - temp_df['close'].shift())
+        low_close = np.abs(temp_df['low'] - temp_df['close'].shift())
+        
+        true_range = np.maximum(high_low, np.maximum(high_close, low_close))
+        atr = true_range.rolling(window=self.atr_len).mean().iloc[-1]
+        return atr
+
+    def _calculate_supertrend_latest(self):
+        """
+        Calculate Supertrend for the latest bar, updating internal state.
+        This is a stateful calculation.
+        """
+        temp_df = self._get_bar_history_df()
+        if len(temp_df) < self.atr_len + 1:
+            return self.supertrend_trend # Keep previous trend if not enough data
+
+        current_bar = temp_df.iloc[-1]
+        prev_bar = temp_df.iloc[-2] if len(temp_df) >= 2 else None
+
+        atr = self._calculate_atr_latest()
+        if pd.isna(atr):
+            return self.supertrend_trend # Keep previous trend if ATR not calculable yet
+
+        hlc3 = (current_bar['high'] + current_bar['low'] + current_bar['close']) / 3
+        
+        upperband = hlc3 + self.atr_mult * atr
+        lowerband = hlc3 - self.atr_mult * atr
+
+        # Initialize final bands if first calculation or new day (if applicable)
+        if self.supertrend_final_upperband is None or self.supertrend_final_lowerband is None:
+            self.supertrend_final_upperband = upperband
+            self.supertrend_final_lowerband = lowerband
+
+        # Update final bands based on previous values
+        if prev_bar is not None:
+            # Upperband logic
+            if current_bar['close'] > self.supertrend_final_upperband:
+                self.supertrend_final_upperband = lowerband # Reset upperband if price crosses above
+            else:
+                self.supertrend_final_upperband = min(upperband, self.supertrend_final_upperband)
+
+            # Lowerband logic
+            if current_bar['close'] < self.supertrend_final_lowerband:
+                self.supertrend_final_lowerband = upperband # Reset lowerband if price crosses below
+            else:
+                self.supertrend_final_lowerband = max(lowerband, self.supertrend_final_lowerband)
+
+        # Determine trend
+        if self.supertrend_trend == 1: # Was uptrend
+            if current_bar['close'] < self.supertrend_final_lowerband:
+                self.supertrend_trend = -1 # Change to downtrend
+        elif self.supertrend_trend == -1: # Was downtrend
+            if current_bar['close'] > self.supertrend_final_upperband:
+                self.supertrend_trend = 1 # Change to uptrend
+
+        return self.supertrend_trend
+
+    def _calculate_vwap_latest(self, current_price, current_volume, current_timestamp):
+        """
+        Calculate real-time VWAP for the current day.
+        This needs to be called for every tick.
+        """
+        current_day = current_timestamp.date()
+        if self.last_vwap_day is None or current_day != self.last_vwap_day:
+            # New day, reset VWAP sums
+            self.daily_vwap_sum_tpv = 0.0
+            self.daily_vwap_sum_volume = 0.0
+            self.last_vwap_day = current_day
+            # Also reset Supertrend bands for a new day if desired, or let them re-init on first bar
+            self.supertrend_final_upperband = None
+            self.supertrend_final_lowerband = None
+
+
+        # Use the current tick's price and volume for the most up-to-date VWAP
+        self.daily_vwap_sum_tpv += current_price * current_volume
+        self.daily_vwap_sum_volume += current_volume
+
+        if self.daily_vwap_sum_volume > 0:
+            return self.daily_vwap_sum_tpv / self.daily_vwap_sum_volume
+        return np.nan
+    
+    def _calculate_rsi_latest(self):
+        """Calculate RSI for the latest bar in history."""
+        temp_df = self._get_bar_history_df()
+        if len(temp_df) < self.rsi_length + 1:
+            return np.nan
+        
+        # Calculate RSI on a rolling window of the history
+        series = temp_df['close'].tail(self.rsi_length * 2) # Get enough data for calculation
+        delta = series.diff()
+        gain = (delta.where(delta > 0, 0)).rolling(window=self.rsi_length).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(window=self.rsi_length).mean()
+        
+        # Avoid division by zero for RS
+        rs = gain / loss if (loss != 0).all() else pd.Series(np.inf, index=gain.index)
+        rsi = 100 - (100 / (1 + rs))
+        return rsi.iloc[-1]
+
+    def _calculate_ema_latest(self, period):
+        """Calculate EMA for the latest bar in history."""
+        temp_df = self._get_bar_history_df()
+        if len(temp_df) < period:
+            return np.nan
+        
+        # Calculate EMA on a rolling window of the history
+        series = temp_df['close'].tail(period * 2) # Get enough data for calculation
+        return series.ewm(span=period, adjust=False).mean().iloc[-1] # adjust=False for traditional EMA
+
+    # --- Existing utility methods (mostly unchanged) ---
+    def is_in_session(self, timestamp):
+        """Check if timestamp is within trading session"""
+        if not self.is_intraday:
+            return True
+
+        if timestamp.tzinfo is None:
+            timestamp = self.ist_tz.localize(timestamp)
+        ist_time = timestamp.time()
+        start_time = time(self.intraday_start_hour, self.intraday_start_min)
+        end_time = time(self.intraday_end_hour, self.intraday_end_min)
+
+        return start_time <= ist_time <= end_time
+    
+    def get_current_hour_minute_ist(self, timestamp):
+        """Get current hour and minute in IST"""
+        if timestamp.tzinfo is None:
+            timestamp = self.ist_tz.localize(timestamp)
+        return timestamp.hour, timestamp.minute
+    
+    def is_near_session_end(self, timestamp):
+        """Check if we're near session end"""
+        if not self.is_intraday:
+            return False
+            
+        current_hour, current_min = self.get_current_hour_minute_ist(timestamp)
+        current_minutes = current_hour * 60 + current_min
+        end_minutes = self.intraday_end_hour * 60 + self.intraday_end_min
+        
+        time_to_end = end_minutes - current_minutes
+        return 0 < time_to_end <= self.exit_before_close
+    
+    def is_end_of_session(self, timestamp):
+        """Check if session has ended"""
+        if not self.is_intraday:
+            return False
+            
+        current_hour, current_min = self.get_current_hour_minute_ist(timestamp)
+        current_minutes = current_hour * 60 + current_min
+        end_minutes = self.intraday_end_hour * 60 + self.intraday_end_min
+        
+        return current_minutes >= end_minutes
+    
+    def should_allow_new_entries(self, timestamp):
+        """Check if new entries are allowed"""
+        if not self.is_intraday:
+            return True
+            
+        current_hour, current_min = self.get_current_hour_minute_ist(timestamp)
+        current_minutes = current_hour * 60 + current_min
+        end_minutes = self.intraday_end_hour * 60 + self.intraday_end_min
+        
+        time_to_end = end_minutes - current_minutes
+        # Allow entries if there's more than (exit_before_close + 30) minutes left
+        return time_to_end > (self.exit_before_close + 30)
+    
+    def _check_reentry_momentum(self, bar_history_df, current_idx):
+        """
+        Checks for momentum in the last few candles for re-entry.
+        Adapted to use bar_history_df.
+        """
+        if current_idx < self.reentry_momentum_lookback:
+            return False
+
+        # Ensure we have enough bars for lookback
+        if len(bar_history_df) <= current_idx - self.reentry_momentum_lookback:
+            return False
+
+        price_increase_over_lookback = bar_history_df.iloc[current_idx]['close'] > bar_history_df.iloc[current_idx - self.reentry_momentum_lookback]['close']
+        
+        green_candles_count = 0
+        for k in range(self.reentry_momentum_lookback + 1):
+            idx_to_check = current_idx - k
+            if idx_to_check >= 0 and idx_to_check < len(bar_history_df):
+                if bar_history_df.iloc[idx_to_check]['close'] > bar_history_df.iloc[idx_to_check]['open']:
+                    green_candles_count += 1
+        
+        has_min_green_candles = green_candles_count >= self.reentry_min_green_candles
+        return price_increase_over_lookback and has_min_green_candles
+
+    def can_reenter(self, current_price, timestamp, current_bar_data):
+        """
+        Check if re-entry is allowed based on previous exit reason and new conditions.
+        Adapted to use current_bar_data (which contains latest indicators) and bar_history_df.
+        """
+        if self.last_exit_price is None:
+            return False # Can't re-enter if no previous exit
+
+        if self.last_exit_reason == "time" and self.last_time_exit_date == timestamp.date():
+            return False
+
+        if self.last_entry_price is not None:
+            # Price buffer check
+            if not (current_price > (self.last_entry_price + self.reentry_price_buffer)): return False
+            
+            # Indicator checks (ensure indicators are present in current_bar_data)
+            if self.use_ema_crossover and not current_bar_data.get('ema_bull', False): return False
+
+            indicator_bullish_check = False
+            if self.use_vwap and current_bar_data.get('vwap_bull', False):
+                indicator_bullish_check = True
+            if self.use_supertrend and current_bar_data.get('supertrend') == 1:
+                indicator_bullish_check = True
+            
+            if (self.use_vwap or self.use_supertrend) and not indicator_bullish_check:
+                return False
+
+            # Momentum check using the full bar history
+            bar_history_df = self._get_bar_history_df()
+            current_idx_for_momentum = len(bar_history_df) - 1
+            if not self._check_reentry_momentum(bar_history_df, current_idx_for_momentum): return False
+            
+            return True
+        
+        return False
+    
+    def enter_position(self, price, timestamp, reason="Buy Signal"):
+        """Enter a long position and set up dual stop loss system"""
+        if self.position_size == 0:
+            # Simplified position sizing: fixed capital / price.
+            # In real trading, this should be risk-based or fixed quantity.
+            self.position_size = self.current_equity / price 
+            self.position_entry_price = price
+            self.position_entry_time = timestamp
+            self.position_high_price = price
+            self.base_stop_price = price - self.base_sl_points
+            self.trail_stop_price = 0
+            self.trailing_active = False
+            self.tp1_filled = 0.0
+            self.tp2_filled = 0.0
+            
+            log = ["ENTRY", timestamp, f"{price:.2f}", f"{self.position_size:.2f}", 
+                   f"Base SL: {self.base_stop_price:.2f}", reason]
+            self.action_logs.append(log)
+            print(f"ENTRY: {timestamp} - Price: {price:.2f} - Size: {self.position_size:.2f}")
+            print(f"  └─ BASE STOP (Fixed): {self.base_stop_price:.2f}")
+            print(f"  └─ TRAIL STOP: Inactive (activates at +{self.trail_activation_points} points)")
+    
+    def update_trailing_stop(self, current_price, timestamp):
+        """Update trailing stop loss based on current price"""
+        if not self.use_trail_stop or self.position_size <= 0:
+            return
+            
+        if current_price > self.position_high_price:
+            self.position_high_price = current_price
+            
+        profit_points = current_price - self.position_entry_price
+        
+        if not self.trailing_active and profit_points >= self.trail_activation_points:
+            self.trailing_active = True
+            self.trail_stop_price = self.position_high_price - self.trail_distance_points
+            print(f"TRAIL ACTIVATED: {timestamp} - Trail Stop: {self.trail_stop_price:.2f}")
+        elif self.trailing_active:
+            new_trail_stop = self.position_high_price - self.trail_distance_points
+            # Ensure trail stop only moves up (for long positions)
+            if new_trail_stop > self.trail_stop_price:
+                old_trail = self.trail_stop_price
+                self.trail_stop_price = new_trail_stop
+                print(f"TRAIL UPDATED: {old_trail:.2f} -> {self.trail_stop_price:.2f} (High: {self.position_high_price:.2f})")
+    
+    def get_effective_stop_price(self):
+        """
+        Get the effective stop price.
+        This is the higher of the base stop and the trail stop, ensuring the
+        base stop acts as a non-negotiable floor while the trail stop protects profits.
+        """
+        if not self.trailing_active or self.trail_stop_price <= 0:
+            return self.base_stop_price
+        return max(self.base_stop_price, self.trail_stop_price)
+    
+    def check_stop_loss_hit(self, current_price):
+        """
+        Check if any stop loss has been hit.
+        Returns a tuple (is_hit, reason). The reason explicitly states
+        whether the 'Base Stop Loss' or 'Trail Stop Loss' was triggered.
+        """
+        effective_stop = self.get_effective_stop_price()
+        if current_price <= effective_stop:
+            # If trailing is active and trail stop is higher than base, and price hit trail
+            if self.trailing_active and self.trail_stop_price > self.base_stop_price and current_price <= self.trail_stop_price:
+                return True, "Trail Stop Loss"
+            # Otherwise, it's the base stop or trail stop was lower than base
+            return True, "Base Stop Loss"
+        return False, ""
+
+    def _reset_position_state(self):
+        """Helper to reset all position-related variables after a full exit."""
+        self.position_size = 0
+        self.position_entry_time = None
+        self.position_high_price = 0
+        self.base_stop_price = 0
+        self.trail_stop_price = 0
+        self.trailing_active = False
+        self.tp1_filled = 0.0
+        self.tp2_filled = 0.0
+
+    def exit_position(self, price, timestamp, qty_percent=100, reason="Exit", exit_classification=None):
+        """Exit position (partial or full) and log the trade."""
+        if self.position_size > 0:
+            exit_qty = self.position_size * (qty_percent / 100)
+            
+            # Ensure we don't exit more than available
+            if exit_qty > self.position_size:
+                exit_qty = self.position_size
+            
+            pnl = (price - self.position_entry_price) * exit_qty
+            self.current_equity += pnl
+            self.position_size -= exit_qty
+            
+            log = ["EXIT", timestamp, f"{price:.2f}", f"{qty_percent}%", f"{pnl:.2f}", reason]
+            self.action_logs.append(log)
+            print(f"EXIT: {timestamp} - Price: {price:.2f} - Qty%: {qty_percent}% - PnL: {pnl:.2f} - Reason: {reason}")
+            
+            trade = {
+                'entry_time': self.position_entry_time, 'exit_time': timestamp,
+                'entry_price': self.position_entry_price, 'exit_price': price,
+                'quantity': exit_qty, 'pnl': pnl, 'reason': reason
+            }
+            self.trades.append(trade)
+
+            if self.position_size <= 1e-9: # Effectively zero
+                self.last_exit_price = price
+                self.last_entry_price = self.position_entry_price
+                if exit_classification:
+                    self.last_exit_reason = exit_classification
+                self._reset_position_state()
+    
+    # --- New methods for real-time tick processing ---
+
+    def _update_current_bar_data(self, timestamp, price, volume):
+        """Updates the OHLCV and volume for the current minute bar being formed."""
+        if self.current_bar_data['open'] is None:
+            self.current_bar_data['open'] = price
+            self.current_bar_data['high'] = price
+            self.current_bar_data['low'] = price
+            self.current_bar_data['timestamp'] = timestamp.replace(second=0, microsecond=0) # Bar timestamp is minute start
+        else:
+            self.current_bar_data['high'] = max(self.current_bar_data['high'], price)
+            self.current_bar_data['low'] = min(self.current_bar_data['low'], price)
+        
+        self.current_bar_data['close'] = price
+        self.current_bar_data['volume'] += volume
+
+    def _close_and_add_bar_to_history(self, bar_timestamp):
+        """Finalizes the current bar and adds it to the history."""
+        if self.current_bar_data['open'] is None:
+            # No data for this bar, skip
+            return
+
+        # Create a dictionary for the completed bar
+        completed_bar = {
+            'timestamp': bar_timestamp,
+            'open': self.current_bar_data['open'],
+            'high': self.current_bar_data['high'],
+            'low': self.current_bar_data['low'],
+            'close': self.current_bar_data['close'],
+            'volume': self.current_bar_data['volume']
+        }
+
+        # Append to history list
+        self._bar_history_list.append(completed_bar)
+
+        # Trim history list to max_bar_history_length
+        if len(self._bar_history_list) > self.max_bar_history_length:
+            self._bar_history_list = self._bar_history_list[-self.max_bar_history_length:]
+
+        # Reset current bar data for the next minute
+        self.current_bar_data = {
+            'open': None, 'high': None, 'low': None, 'close': None, 'volume': 0, 'timestamp': None
+        }
+
+    def _update_indicators_on_history(self):
+        """
+        Calculates/updates all necessary indicators on the self.bar_history.
+        This is called after a new bar is closed and added.
+        """
+        # Ensure enough history for calculations
+        min_bars_for_indicators = max(self.atr_len, self.rsi_length, self.slow_ema, 50)
+        if len(self._bar_history_list) < min_bars_for_indicators:
+            return
+
+        # Get the latest bar from the list (which is now a completed bar)
+        latest_bar_dict = self._bar_history_list[-1]
+        
+        # Calculate latest values and store them in the latest_bar_dict
+        # These will be accessed when we convert to DataFrame for decision making
+        
+        # Supertrend
+        if self.use_supertrend:
+            latest_bar_dict['supertrend'] = self._calculate_supertrend_latest()
+        
+        # RSI
+        if self.use_rsi_filter:
+            latest_bar_dict['rsi'] = self._calculate_rsi_latest()
+        
+        # EMAs
+        if self.use_ema_crossover:
+            latest_bar_dict['ema_fast'] = self._calculate_ema_latest(self.fast_ema)
+            latest_bar_dict['ema_slow'] = self._calculate_ema_latest(self.slow_ema)
+            latest_bar_dict['ema_bull'] = latest_bar_dict['ema_fast'] > latest_bar_dict['ema_slow']
+        
+        # HTF Trend (using a longer EMA)
+        latest_bar_dict['htf_trend'] = self._calculate_ema_latest(50)
+        latest_bar_dict['htf_bullish'] = latest_bar_dict['close'] > latest_bar_dict['htf_trend']
+
+        # Update the list with the modified dictionary
+        self._bar_history_list[-1] = latest_bar_dict
+
+
+    def on_tick(self, tick_timestamp, tick_price, tick_volume):
+        """
+        Main entry point for processing a new tick from the WebSocket stream.
+        Args:
+            tick_timestamp (datetime): Timestamp of the tick.
+            tick_price (float): Price of the tick.
+            tick_volume (int): Volume of the tick.
+        """
+        # Ensure timestamp is timezone-aware if needed, or naive if consistent
+        if tick_timestamp.tzinfo is None:
+            tick_timestamp = self.ist_tz.localize(tick_timestamp)
+
+        # 1. Update current bar data with the new tick
+        self._update_current_bar_data(tick_timestamp, tick_price, tick_volume)
+
+        # 2. Calculate real-time VWAP with every tick
+        self.current_vwap = self._calculate_vwap_latest(tick_price, tick_volume, tick_timestamp)
+        self.current_vwap_bull = tick_price > self.current_vwap if not pd.isna(self.current_vwap) else False
+
+        # 3. Check for minute change and close previous bar if necessary
+        current_minute = tick_timestamp.replace(second=0, microsecond=0)
+        if self.last_processed_minute is None:
+            self.last_processed_minute = current_minute
+        elif current_minute > self.last_processed_minute:
+            # New minute, close previous bar and add to history
+            self._close_and_add_bar_to_history(self.last_processed_minute)
+            self.last_processed_minute = current_minute
+            # After adding a new bar, update indicators on the history
+            self._update_indicators_on_history()
+
+        # 4. Get current state for decision making
+        # We use the latest tick price for immediate checks (SL/TP)
+        current_price = tick_price
+        
+        # Get the latest completed bar's data and indicators for signal generation
+        # This will be a dictionary containing 'open', 'high', 'low', 'close', 'volume', and indicator values
+        current_bar_row = {}
+        if self._bar_history_list:
+            current_bar_row = self._bar_history_list[-1].copy() # Get a copy to modify
+            # Add real-time VWAP bullish state to current_bar_row for consistency
+            current_bar_row['vwap_bull'] = self.current_vwap_bull
+            # Supertrend trend is already updated in _update_indicators_on_history
+        
+        # Ensure we have enough historical bars for indicator-based decisions
+        min_bars_needed_for_signals = max(self.atr_len, self.rsi_length, self.slow_ema, 50, self.reentry_momentum_lookback)
+        has_enough_history = len(self._bar_history_list) >= min_bars_needed_for_signals
+
+        # 5. Apply strategy logic
+        
+        # ENTRY LOGIC
+        if self.position_size == 0:
+            if not self.should_allow_new_entries(tick_timestamp):
+                return # Do not enter if near session end
+            
+            # Additional check for intraday: don't enter after 2:30 PM (example)
+            if self.is_intraday and tick_timestamp.hour >= 14 and tick_timestamp.minute >= 30:
+                return
+
+            if not has_enough_history:
+                return # Not enough data for reliable signals
+
+            buy_signal = True
+            if self.use_supertrend and current_bar_row.get('supertrend') != 1:
+                buy_signal = False
+            if self.use_vwap and not current_bar_row.get('vwap_bull'):
+                buy_signal = False
+            if self.use_ema_crossover and not current_bar_row.get('ema_bull'):
+                buy_signal = False
+            if self.use_rsi_filter and not (self.rsi_oversold < current_bar_row.get('rsi', np.nan) < self.rsi_overbought):
+                buy_signal = False
+            if not current_bar_row.get('htf_bullish'):
+                buy_signal = False
+            
+            # Re-entry check
+            can_reenter_flag = self.can_reenter(current_price, tick_timestamp, current_bar_row)
+            
+            if buy_signal and can_reenter_flag:
+                self.enter_position(current_price, tick_timestamp)
+        
+        # POSITION MANAGEMENT
+        if self.position_size > 0:
+            # 1. MANDATORY SESSION END CHECK (Highest Priority)
+            if self.is_near_session_end(tick_timestamp) or self.is_end_of_session(tick_timestamp):
+                self.exit_position(current_price, tick_timestamp, 100, "MANDATORY: Session End", exit_classification="time")
+                self.last_time_exit_date = tick_timestamp.date()
+                self.last_exit_bar_idx = len(self._bar_history_list) - 1 # Index of the last completed bar
+                return # Exit and stop processing for this tick
+            
+            # 2. UPDATE TRAILING STOP
+            self.update_trailing_stop(current_price, tick_timestamp)
+            
+            # 3. CHECK STOP LOSS (Base or Trail)
+            stop_hit, stop_reason = self.check_stop_loss_hit(current_price)
+            if stop_hit:
+                self.exit_position(current_price, tick_timestamp, 100, f"MANDATORY: {stop_reason}", exit_classification=stop_reason)
+                self.last_exit_bar_idx = len(self._bar_history_list) - 1
+                return # Exit and stop processing for this tick
+            
+            # 4. TAKE PROFIT LEVELS (Lowest Priority)
+            if self.use_tiered_tp:
+                entry_price = self.position_entry_price
+                # Check TP1
+                if self.tp1_filled == 0 and current_price >= entry_price + self.tp1_points:
+                    self.exit_position(current_price, tick_timestamp, 50, "TP1-Quick")
+                    self.tp1_filled = 1
+                
+                # Check TP2 (only if TP1 was filled and position still open)
+                if self.tp2_filled == 0 and self.tp1_filled > 0 and self.position_size > 0 and current_price >= entry_price + self.tp2_points:
+                    self.exit_position(current_price, tick_timestamp, 60, "TP2-Medium") # 60% of remaining
+                    self.tp2_filled = 1
+                
+                # Check TP3 (only if TP2 was filled and position still open)
+                if self.tp2_filled > 0 and self.position_size > 0 and current_price >= entry_price + self.tp3_points:
+                    self.exit_position(current_price, tick_timestamp, 100, "TP3-Runner", exit_classification="profit")
+                    self.last_exit_bar_idx = len(self._bar_history_list) - 1
+                    return # Exit and stop processing for this tick
+
+        # Track equity curve (can be done less frequently, e.g., per minute or per trade)
+        # For tick-by-tick, this can generate a very large list. Consider sampling or only on trade events.
+        equity = self.current_equity + ((current_price - self.position_entry_price) * self.position_size if self.position_size > 0 else 0)
+        self.equity_curve.append({'timestamp': tick_timestamp, 'equity': equity})
+
+    # The generate_results method can remain largely the same, as it processes self.trades and self.equity_curve
+    def generate_results(self):
+        """Generate strategy results and statistics"""
+        if not self.trades:
+            return {"error": "No trades executed"}
+        
+        trades_df = pd.DataFrame(self.trades)
+        if not trades_df.empty:
+            trades_df['trade_duration'] = trades_df['exit_time'] - trades_df['entry_time']
+
+        equity_df = pd.DataFrame(self.equity_curve)
+        
+        total_trades = len(trades_df)
+        winning_trades = len(trades_df[trades_df['pnl'] > 0])
+        win_rate = (winning_trades / total_trades) * 100 if total_trades > 0 else 0
+        
+        total_pnl = trades_df['pnl'].sum()
+        avg_win = trades_df[trades_df['pnl'] > 0]['pnl'].mean() if winning_trades > 0 else 0
+        avg_loss = trades_df[trades_df['pnl'] < 0]['pnl'].mean() if winning_trades > 0 else 0
+        
+        profit_factor = abs(avg_win / avg_loss) if avg_loss != 0 else float('inf')
+        
+        high_water_mark = equity_df['equity'].cummax()
+        drawdown = (high_water_mark - equity_df['equity']) / high_water_mark
+        max_drawdown = drawdown.max() * 100
+        
+        final_equity = equity_df['equity'].iloc[-1] if len(equity_df) > 0 else self.initial_capital
+        total_return = ((final_equity - self.initial_capital) / self.initial_capital) * 100
+        
+        return {
+            'total_trades': total_trades, 'winning_trades': winning_trades, 'losing_trades': total_trades - winning_trades,
+            'win_rate': win_rate, 'total_pnl': total_pnl, 'avg_win': avg_win, 'avg_loss': avg_loss,
+            'profit_factor': profit_factor,
+            'max_drawdown': max_drawdown, 'total_return': total_return, 'final_equity': final_equity,
+            'trades_df': trades_df, 'equity_df': equity_df
+        }
+

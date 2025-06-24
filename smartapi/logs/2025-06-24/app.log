@@ -1,0 +1,40 @@
+[E 250624 09:21:57 smartWebSocketV2:87] Invalid initialization parameters. Provide valid values for all the tokens.
+[E 250624 09:34:16 smartWebSocketV2:87] Invalid initialization parameters. Provide valid values for all the tokens.
+[W 250624 09:40:04 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[E 250624 09:40:16 websocket_stream:14] WebSocket Error: Connection closed
+[W 250624 09:40:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 09:40:16 websocket_stream:14] WebSocket Error: Connection closed
+[W 250624 09:40:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 09:40:16 websocket_stream:14] WebSocket Error: Connection closed
+[W 250624 09:40:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 09:40:16 websocket_stream:14] WebSocket Error: Connection closed
+[W 250624 09:40:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 09:40:16 websocket_stream:14] WebSocket Error: Connection closed
+[W 250624 09:40:16 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[I 250624 09:46:04 websocket_stream:9] WebSocket Connected!
+[I 250624 10:02:09 websocket_stream:11] WebSocket Connected!
+[W 250624 10:02:09 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[I 250624 10:02:20 websocket_stream:11] WebSocket Connected!
+[E 250624 10:02:20 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 10:02:20 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 10:02:20 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 10:02:20 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 10:02:20 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 10:02:20 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 10:02:20 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 10:02:20 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 10:02:20 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 10:02:20 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[I 250624 15:44:50 websocket_stream:11] WebSocket Connected!
+[W 250624 15:44:50 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[I 250624 15:45:00 websocket_stream:11] WebSocket Connected!
+[E 250624 15:45:00 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 15:45:00 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 15:45:00 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 15:45:00 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 15:45:00 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 15:45:00 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 15:45:00 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 15:45:00 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
+[E 250624 15:45:00 websocket_stream:17] WebSocket Error: Connection closed
+[W 250624 15:45:00 smartWebSocketV2:343] Connection closed due to max retry attempts reached.
