@@ -51,7 +51,7 @@ def main():
             if strategy.position_size > 0:
                 # Status when in a position
                 status_msg = (
-                    f"STATUS: In Position | Size={strategy.position_size:.2f}, "
+                    f"STATUS: In Position | Size={strategy.position_size}, "
                     f"Entry={strategy.position_entry_price:.2f}, "
                     f"Current SL={strategy.get_effective_stop_price():.2f}"
                 )

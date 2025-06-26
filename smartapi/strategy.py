@@ -271,7 +271,8 @@ class ModularIntradayStrategy:
             if not (current_price > (self.last_entry_price + self.reentry_price_buffer)): return False
             if self.use_ema_crossover and not current_bar_data.get('ema_bull', False): return False
 
-            indicator_bullish_check = (self.use_vwap and current_bar_data.get('vwap_bull', False)) or \
+            # FIX: Use the real-time self.current_vwap_bull directly
+            indicator_bullish_check = (self.use_vwap and self.current_vwap_bull) or \
                                       (self.use_supertrend and current_bar_data.get('supertrend') == 1)
             if not indicator_bullish_check: return False
 
@@ -451,7 +452,6 @@ class ModularIntradayStrategy:
         current_bar_row = {}
         if self._bar_history_list:
             current_bar_row = self._bar_history_list[-1].copy()
-            current_bar_row['vwap_bull'] = self.current_vwap_bull
         
         has_enough_history = len(self._bar_history_list) >= self.min_bars_for_signals
 
@@ -459,7 +459,8 @@ class ModularIntradayStrategy:
         if self.position_size == 0 and self.should_allow_new_entries(tick_timestamp) and has_enough_history:
             buy_signal = True
             if self.use_supertrend and current_bar_row.get('supertrend') != 1: buy_signal = False
-            if self.use_vwap and not current_bar_row.get('vwap_bull'): buy_signal = False
+            # FIX: Use the real-time self.current_vwap_bull directly
+            if self.use_vwap and not self.current_vwap_bull: buy_signal = False
             if self.use_ema_crossover and not current_bar_row.get('ema_bull'): buy_signal = False
             if self.use_rsi_filter and not (self.rsi_oversold < current_bar_row.get('rsi', 50) < self.rsi_overbought): buy_signal = False
             if not current_bar_row.get('htf_bullish'): buy_signal = False
