@@ -1,4 +1,4 @@
-# c:\Users\user\projects\angelalgo\smartapi\websocket_stream.py (Final Corrected Version)
+# websocket_stream.py (Refactored for Integration)
 import threading
 import time
 import json
@@ -7,65 +7,39 @@ from datetime import datetime
 import pytz
 from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 from logzero import logger
-from login import login # The class now depends on the login function
+from login import login # Assuming login.py is in the same directory or accessible
 
 class WebSocketStreamer:
     """
-    Handles connection to the SmartAPI WebSocket feed.
-    It now manages its own authentication, subscribes to instruments,
+    Handles connection to the SmartAPI WebSocket feed, subscribes to instruments,
     and calls a callback function for each received tick.
     """
-    def __init__(self, instrument_keys, on_tick_callback):
+    def __init__(self, api_key, client_id, auth_token, feed_token, instrument_keys, on_tick_callback):
         """
         Args:
+            api_key (str): Your Angel One API key.
+            client_id (str): Your Angel One client ID.
+            auth_token (str): The session's authentication token.
+            feed_token (str): The session's feed token.
             instrument_keys (list): A list of instrument tokens (as strings) to subscribe to.
             on_tick_callback (function): The function to call with tick data.
                                          Expected signature: on_tick(timestamp, price, volume)
         """
+        self.api_key = api_key
+        self.client_id = client_id
+        self.auth_token = auth_token
+        self.feed_token = feed_token
         self.instrument_keys = instrument_keys
         self.on_tick_callback = on_tick_callback
-
-        # Internal state for credentials and connection objects
-        self.api_key = None
-        self.client_id = None
-        self.auth_token = None
-        self.feed_token = None
-        self.smart_api = None
 
         self.sws = None
         self.ws_thread = None
         self.is_running = False
         self.ist_tz = pytz.timezone('Asia/Kolkata')
         
-        # Correct exchange type for NSE_CM (NIFTY 50 index)
-        self.exchange_type = 1 # 1: NSE_CM, 2: NSE_FO
-
-    def _authenticate_and_get_tokens(self):
-        """
-        Handles the entire authentication process and sets instance attributes.
-        Returns True on success, False on failure.
-        """
-        logger.info("Performing login to get session tokens for WebSocket...")
-        try:
-            self.smart_api, self.auth_token, _ = login()
-            if not self.smart_api or not self.auth_token:
-                logger.error("Authentication failed. Cannot proceed with WebSocket.")
-                return False
-
-            self.feed_token = self.smart_api.getfeedToken()
-            self.api_key = self.smart_api.api_key
-            self.client_id = os.getenv("CLIENT_ID")
-
-            if not all([self.feed_token, self.api_key, self.client_id]):
-                logger.error("Failed to retrieve one or more required tokens (feed_token, api_key, client_id).")
-                return False
-            
-            logger.info("Authentication successful. All tokens for WebSocket are ready.")
-            return True
-
-        except Exception as e:
-            logger.error(f"An error occurred during the authentication process: {e}")
-            return False
+        # SmartAPI requires specific exchange types. Assuming NSE_FO for this example.
+        # This should be configured based on the instrument.
+        self.exchange_type = 2 # 1: NSE_CM, 2: NSE_FO
 
     def _on_open(self, wsapp):
         """Callback executed when the WebSocket connection is opened."""
@@ -79,29 +53,36 @@ class WebSocketStreamer:
             return
 
         logger.info(f"Subscribing to tokens: {self.instrument_keys}")
-        token_list = [{"exchangeType": self.exchange_type, "tokens": self.instrument_keys}]
+        # SmartAPI subscription format
+        token_list = [
+            {"exchangeType": self.exchange_type, "tokens": self.instrument_keys}
+        ]
+        # Mode 1 is for LTP (Last Traded Price)
         self.sws.subscribe(correlation_id="strategy_sub", mode=1, token_list=token_list)
 
     def _on_data(self, wsapp, message):
         """
         Callback for each message. Parses tick data and calls the strategy's on_tick method.
-        This is now robust enough to handle index ticks that may not have volume data.
         """
-        # The raw tick logging can be commented out now that we've found the issue.
-        # logger.info(f"RAW_TICK_RECEIVED: {message}")
-        
         try:
-            # FIX: The condition now correctly checks for 'exchange_timestamp'.
-            if 'last_traded_price' in message and 'exchange_timestamp' in message:
+            # We only care about price updates, not heartbeats or other messages.
+            # 'last_traded_price' is the key indicator of a tick message.
+            if 'last_traded_price' in message and 'last_traded_quantity' in message and 'feed_timestamp' in message:
+                
+                # 1. Parse Price: Sent as an integer, needs division.
                 price = float(message['last_traded_price']) / 100.0
-                epoch_ms = int(message['exchange_timestamp'])
+                
+                # 2. Parse Volume
+                volume = int(message['last_traded_quantity'])
+                
+                # 3. Parse Timestamp: Sent as Unix epoch milliseconds.
+                epoch_ms = int(message['feed_timestamp'])
                 timestamp = datetime.fromtimestamp(epoch_ms / 1000, tz=self.ist_tz)
                 
-                # Volume is correctly treated as optional.
-                volume = int(message.get('last_traded_quantity', 0))
-                
+                # 4. Call the strategy's callback function with the clean data
                 if self.on_tick_callback:
                     self.on_tick_callback(timestamp, price, volume)
+
         except Exception as e:
             logger.error(f"Error processing tick message: {e}\nMessage: {message}")
 
@@ -114,25 +95,22 @@ class WebSocketStreamer:
         logger.warning(f"WebSocket Connection Closed. Code: {code}, Reason: {reason}")
 
     def _run_connection(self):
-        """Internal method to authenticate and then run the WebSocket connection loop."""
+        """Internal method to run the WebSocket connection loop."""
         self.is_running = True
-        logger.info("WebSocket thread started. Beginning authentication...")
+        logger.info("WebSocket thread started. Connecting...")
         
-        if not self._authenticate_and_get_tokens():
-            logger.error("Halting WebSocket thread due to authentication failure.")
-            self.is_running = False
-            return
-
         self.sws = SmartWebSocketV2(self.auth_token, self.api_key, self.client_id, self.feed_token)
         
+        # Assign the instance methods as callbacks
         self.sws.on_open = self._on_open
         self.sws.on_data = self._on_data
         self.sws.on_error = self._on_error
         self.sws.on_close = self._on_close
         
-        logger.info("Connecting to WebSocket feed...")
+        # This call is blocking and will run until the connection closes
         self.sws.connect()
         
+        # Once connect() returns, it means the connection was closed.
         self.is_running = False
         logger.info("WebSocket connection loop has ended.")
 
@@ -147,17 +125,18 @@ class WebSocketStreamer:
 
     def stop(self):
         """Stops the WebSocket connection gracefully."""
-        if not self.is_running and not self.sws:
+        if not self.is_running:
             return
             
         logger.info("Stopping WebSocket connection...")
-        self.is_running = False
+        self.is_running = False # Prevent any auto-reconnect logic if it were added
         if self.sws:
             self.sws.close_connection()
         
         if self.ws_thread and self.ws_thread.is_alive():
-            self.ws_thread.join(timeout=5)
+            self.ws_thread.join(timeout=5) # Wait for the thread to finish
             if self.ws_thread.is_alive():
                 logger.warning("WebSocket thread did not terminate gracefully.")
         
         logger.info("WebSocket has been stopped.")
+
