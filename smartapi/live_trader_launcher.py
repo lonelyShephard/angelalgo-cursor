@@ -12,7 +12,7 @@ class LiveTraderGUI:
     """
     def __init__(self, root):
         self.root = root
-        self.root.title("Live Trader Launcher")
+        self.root.title("Live Trader Launcher v2")
         self.bot_thread = None
         self.bot_instance = None
 
@@ -21,6 +21,9 @@ class LiveTraderGUI:
 
         # --- GUI Variables ---
         self.instrument_token = tk.StringVar(value="26000") # Default to NIFTY 50
+        self.exchange_type = tk.StringVar(value="NSE_CM")
+        self.feed_type = tk.StringVar(value="Quote") # Default to Quote for VWAP
+        self.log_ticks = tk.BooleanVar(value=False) # Default to not logging ticks
 
         # Indicator toggles
         self.use_supertrend = tk.BooleanVar(value=default_strategy.use_supertrend)
@@ -71,12 +74,24 @@ class LiveTraderGUI:
         # --- Main Settings Frame ---
         ttk.Label(f_main, text="Instrument Token:", font=('Helvetica', 10, 'bold')).grid(row=0, column=0, sticky="w", pady=5)
         ttk.Entry(f_main, textvariable=self.instrument_token, width=15).grid(row=0, column=1, sticky="w")
-        
-        ttk.Label(f_main, text="Initial Capital:").grid(row=1, column=0, sticky="w", pady=2)
-        ttk.Entry(f_main, textvariable=self.initial_capital, width=15).grid(row=1, column=1, sticky="w")
 
-        ttk.Label(f_main, text="Exit Before Close (min):").grid(row=2, column=0, sticky="w", pady=2)
-        ttk.Entry(f_main, textvariable=self.exit_before_close, width=15).grid(row=2, column=1, sticky="w")
+        ttk.Label(f_main, text="Exchange:", font=('Helvetica', 10, 'bold')).grid(row=1, column=0, sticky="w", pady=5)
+        exchange_map = {"NSE_CM": 1, "NSE_FO": 2, "BSE_CM": 3, "BSE_FO": 4, "MCX_FO": 5, "NCDEX_FO": 7}
+        self.exchange_combo = ttk.Combobox(f_main, textvariable=self.exchange_type, values=list(exchange_map.keys()), width=12)
+        self.exchange_combo.grid(row=1, column=1, sticky="w")
+        
+        ttk.Label(f_main, text="Feed Type:", font=('Helvetica', 10, 'bold')).grid(row=2, column=0, sticky="w", pady=5)
+        feed_map = {"LTP": 1, "Quote": 2, "SnapQuote": 3}
+        self.feed_combo = ttk.Combobox(f_main, textvariable=self.feed_type, values=list(feed_map.keys()), width=12)
+        self.feed_combo.grid(row=2, column=1, sticky="w")
+
+        ttk.Label(f_main, text="Initial Capital:").grid(row=3, column=0, sticky="w", pady=2)
+        ttk.Entry(f_main, textvariable=self.initial_capital, width=15).grid(row=3, column=1, sticky="w")
+
+        ttk.Label(f_main, text="Exit Before Close (min):").grid(row=4, column=0, sticky="w", pady=2)
+        ttk.Entry(f_main, textvariable=self.exit_before_close, width=15).grid(row=4, column=1, sticky="w")
+
+        ttk.Checkbutton(f_main, text="Log Live Ticks to Console", variable=self.log_ticks).grid(row=5, column=0, columnspan=2, sticky="w", pady=10)
 
         # --- Indicator Frame ---
         ttk.Checkbutton(f_indicators, text="Use Supertrend", variable=self.use_supertrend).grid(row=0, column=0, sticky="w")
@@ -116,9 +131,15 @@ class LiveTraderGUI:
         button_frame.pack(pady=10)
         self.start_button = ttk.Button(button_frame, text="Start Live Trading", command=self.start_trading)
         self.start_button.pack(side="left", padx=5)
+
+        self.pause_button = ttk.Button(button_frame, text="Pause Stream", command=self.pause_stream, state="disabled")
+        self.pause_button.pack(side="left", padx=5)
+
+        self.resume_button = ttk.Button(button_frame, text="Resume Stream", command=self.resume_stream, state="disabled")
+        self.resume_button.pack(side="left", padx=5)
+
         self.stop_button = ttk.Button(button_frame, text="Stop Trading", command=self.stop_trading, state="disabled")
         self.stop_button.pack(side="left", padx=5)
-
     def get_params_from_gui(self):
         """Collects all parameters from the GUI fields into a dictionary."""
         return {
@@ -144,25 +165,59 @@ class LiveTraderGUI:
             messagebox.showerror("Error", "Instrument Token must be a number.")
             return
 
+        exchange_map = {"NSE_CM": 1, "NSE_FO": 2, "BSE_CM": 3, "BSE_FO": 4, "MCX_FO": 5, "NCDEX_FO": 7}
+        exchange_type_val = exchange_map.get(self.exchange_type.get(), 1)
+        
+        feed_map = {"LTP": 1, "Quote": 2, "SnapQuote": 3}
+        feed_type_val = feed_map.get(self.feed_type.get(), 2) # Default to Quote
+        log_ticks_val = self.log_ticks.get()
+
         params = self.get_params_from_gui()
         
-        self.bot_instance = LiveTradingBot(instrument_token=instrument, strategy_params=params)
+        self.bot_instance = LiveTradingBot(
+            instrument_token=instrument,
+            strategy_params=params,
+            exchange_type=exchange_type_val,
+            feed_mode=feed_type_val,
+            log_ticks=log_ticks_val
+        )
         self.bot_thread = threading.Thread(target=self.bot_instance.run, daemon=True)
         self.bot_thread.start()
 
         self.start_button.config(state="disabled")
         self.stop_button.config(state="normal")
+        self.pause_button.config(state="normal")
+        self.resume_button.config(state="disabled")
         messagebox.showinfo("Status", "Live trading bot has been started!\nCheck the console and log file for details.")
 
     def stop_trading(self):
         """Stops the running trading bot."""
         if self.bot_instance:
             self.bot_instance.stop(is_manual_stop=True)
-            self.bot_thread.join(timeout=5)
+            if self.bot_thread and self.bot_thread.is_alive():
+                self.bot_thread.join(timeout=5)
         
         self.start_button.config(state="normal")
         self.stop_button.config(state="disabled")
+        self.pause_button.config(state="disabled")
+        self.resume_button.config(state="disabled")
         messagebox.showinfo("Status", "Live trading bot has been stopped.")
+
+    def pause_stream(self):
+        """Pauses the data stream."""
+        if self.bot_instance:
+            self.bot_instance.pause_stream()
+            self.pause_button.config(state="disabled")
+            self.resume_button.config(state="normal")
+            messagebox.showinfo("Status", "Data stream paused.")
+
+    def resume_stream(self):
+        """Resumes the data stream."""
+        if self.bot_instance:
+            self.bot_instance.resume_stream()
+            self.pause_button.config(state="normal")
+            self.resume_button.config(state="disabled")
+            messagebox.showinfo("Status", "Data stream resumed.")
 
     def on_closing(self):
         """Handles the event of closing the GUI window."""

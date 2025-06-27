@@ -15,12 +15,15 @@ class WebSocketStreamer:
     It now manages its own authentication, subscribes to instruments,
     and calls a callback function for each received tick.
     """
-    def __init__(self, instrument_keys, on_tick_callback):
+    def __init__(self, instrument_keys, on_tick_callback, exchange_type=1, feed_mode=1, log_ticks=False):
         """
         Args:
             instrument_keys (list): A list of instrument tokens (as strings) to subscribe to.
             on_tick_callback (function): The function to call with tick data.
                                          Expected signature: on_tick(timestamp, price, volume)
+            exchange_type (int): The exchange type (1: NSE_CM, 2: NSE_FO, etc.).
+            feed_mode (int): The feed type (1: LTP, 2: Quote, 3: SnapQuote).
+            log_ticks (bool): If True, prints every tick to the log.
         """
         self.instrument_keys = instrument_keys
         self.on_tick_callback = on_tick_callback
@@ -36,9 +39,9 @@ class WebSocketStreamer:
         self.ws_thread = None
         self.is_running = False
         self.ist_tz = pytz.timezone('Asia/Kolkata')
-        
-        # Correct exchange type for NSE_CM (NIFTY 50 index)
-        self.exchange_type = 1 # 1: NSE_CM, 2: NSE_FO
+        self.exchange_type = exchange_type
+        self.feed_mode = feed_mode
+        self.log_ticks = log_ticks
 
     def _authenticate_and_get_tokens(self):
         """
@@ -78,9 +81,19 @@ class WebSocketStreamer:
             logger.warning("Cannot subscribe, WebSocket is not running.")
             return
 
-        logger.info(f"Subscribing to tokens: {self.instrument_keys}")
+        logger.info(f"Subscribing to tokens: {self.instrument_keys} on exchange type {self.exchange_type} with mode {self.feed_mode}")
         token_list = [{"exchangeType": self.exchange_type, "tokens": self.instrument_keys}]
-        self.sws.subscribe(correlation_id="strategy_sub", mode=1, token_list=token_list)
+        self.sws.subscribe(correlation_id="strategy_sub", mode=self.feed_mode, token_list=token_list)
+
+    def _unsubscribe(self):
+        """Unsubscribes from the list of instrument tokens."""
+        if not self.is_running or not self.sws:
+            logger.warning("Cannot unsubscribe, WebSocket is not running.")
+            return
+
+        logger.info(f"Unsubscribing from tokens: {self.instrument_keys} on exchange type {self.exchange_type} with mode {self.feed_mode}")
+        token_list = [{"exchangeType": self.exchange_type, "tokens": self.instrument_keys}]
+        self.sws.unsubscribe(correlation_id="strategy_sub", mode=self.feed_mode, token_list=token_list)
 
     def _on_data(self, wsapp, message):
         """
@@ -101,6 +114,8 @@ class WebSocketStreamer:
                 volume = int(message.get('last_traded_quantity', 0))
                 
                 if self.on_tick_callback:
+                    if self.log_ticks:
+                        logger.info(f"LIVE TICK: {timestamp} | Price: {price:.2f} | Volume: {volume}")
                     self.on_tick_callback(timestamp, price, volume)
         except Exception as e:
             logger.error(f"Error processing tick message: {e}\nMessage: {message}")
@@ -161,3 +176,13 @@ class WebSocketStreamer:
                 logger.warning("WebSocket thread did not terminate gracefully.")
         
         logger.info("WebSocket has been stopped.")
+
+    def pause_stream(self):
+        """Pauses the data stream by unsubscribing from tokens."""
+        logger.info("Pausing WebSocket data stream...")
+        self._unsubscribe()
+
+    def resume_stream(self):
+        """Resumes the data stream by re-subscribing to tokens."""
+        logger.info("Resuming WebSocket data stream...")
+        self._subscribe()
