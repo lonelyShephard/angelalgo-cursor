@@ -2,9 +2,9 @@ import time
 import threading
 from tabulate import tabulate
 import pandas as pd
-from logzero import logger, logfile
 import os
 # Import your classes
+from smartapi.log_utils import logger # Import pre-configured logger
 from strategy import ModularIntradayStrategy
 from websocket_stream import WebSocketStreamer
 
@@ -35,7 +35,6 @@ class LiveTradingBot:
 
     def run(self):
         """Sets up and runs the live trading strategy and status monitor."""
-        logfile("live_trader.log", maxBytes=1e6, backupCount=3)
         logger.info("--- Live Trading Bot Initializing ---")
 
         self.strategy = ModularIntradayStrategy(params=self.strategy_params)
