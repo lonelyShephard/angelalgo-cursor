@@ -1,3 +1,4 @@
+# c:\Users\user\projects\angelalgo\smartapi\strategy_refactored.py
 import pandas as pd
 import numpy as np
 from datetime import datetime, time, timedelta
@@ -5,6 +6,7 @@ import pytz
 import warnings
 warnings.filterwarnings('ignore')
 from tabulate import tabulate
+from .indicator_manager import IndicatorManager
 
 class ModularIntradayStrategy:
     def __init__(self, params=None):
@@ -56,7 +58,6 @@ class ModularIntradayStrategy:
         self.exit_before_close = 20  # minutes before session end
         
         # === RISK MANAGEMENT ===
-        # IMPROVEMENT: Added a realistic risk parameter.
         self.risk_per_trade_percent = 1.0 # Risk 1% of current equity per trade
 
         # === POSITION TRACKING VARIABLES ===
@@ -87,7 +88,6 @@ class ModularIntradayStrategy:
         self.trades = []
         self.equity_curve = []
         self.current_equity = self.initial_capital
-        # IMPROVEMENT: Initialize equity curve with starting capital for accurate charting.
         self.equity_curve.append({'timestamp': None, 'equity': self.initial_capital})
 
         # === OVERRIDE WITH PARAMS ===
@@ -98,130 +98,22 @@ class ModularIntradayStrategy:
         # === ACTION LOGGING ===
         self.action_logs = []
 
-        # === REAL-TIME DATA MANAGEMENT ===
-        self.max_bar_history_length = max(
-            self.atr_len, self.rsi_length, self.slow_ema, 50,
-            self.reentry_momentum_lookback
-        ) * 2
-        
-        self._bar_history_list = [] 
-        self.current_bar_data = {
-            'open': None, 'high': None, 'low': None, 'close': None, 'volume': 0, 'timestamp': None
+        # === INDICATOR MANAGER ===
+        strategy_params = {
+            'use_supertrend': self.use_supertrend,
+            'use_vwap': self.use_vwap,
+            'use_ema_crossover': self.use_ema_crossover,
+            'use_rsi_filter': self.use_rsi_filter,
+            'atr_len': self.atr_len,
+            'atr_mult': self.atr_mult,
+            'fast_ema': self.fast_ema,
+            'slow_ema': self.slow_ema,
+            'rsi_length': self.rsi_length
         }
-        self.last_processed_minute = None
-
-        # Real-time VWAP tracking
-        self.daily_vwap_sum_tpv = 0.0
-        self.daily_vwap_sum_volume = 0.0
-        self.last_vwap_day = None
-        self.current_vwap = np.nan
-        self.current_vwap_bull = False
-
-        # Supertrend state
-        self.supertrend_trend = 1
-        self.supertrend_final_upperband = None
-        self.supertrend_final_lowerband = None
-
-    def _get_bar_history_df(self):
-        """Converts the list of bar data to a DataFrame for calculations."""
-        if not self._bar_history_list:
-            return pd.DataFrame(columns=['open', 'high', 'low', 'close', 'volume'])
+        self.indicator_manager = IndicatorManager(strategy_params)
         
-        df = pd.DataFrame(self._bar_history_list)
-        df.set_index('timestamp', inplace=True)
-        df.index = pd.to_datetime(df.index)
-        return df
-
-    def _calculate_atr_latest(self):
-        """Calculate ATR for the latest bar in history."""
-        temp_df = self._get_bar_history_df()
-        if len(temp_df) < self.atr_len + 1:
-            return np.nan
-
-        high_low = temp_df['high'] - temp_df['low']
-        high_close = np.abs(temp_df['high'] - temp_df['close'].shift())
-        low_close = np.abs(temp_df['low'] - temp_df['close'].shift())
-        
-        true_range = np.maximum(high_low, np.maximum(high_close, low_close))
-        atr = true_range.rolling(window=self.atr_len).mean().iloc[-1]
-        return atr
-
-    def _calculate_supertrend_latest(self):
-        """Calculate Supertrend for the latest bar, updating internal state."""
-        temp_df = self._get_bar_history_df()
-        if len(temp_df) < self.atr_len + 1:
-            return self.supertrend_trend
-
-        current_bar = temp_df.iloc[-1]
-        atr = self._calculate_atr_latest()
-        if pd.isna(atr):
-            return self.supertrend_trend
-
-        hlc3 = (current_bar['high'] + current_bar['low'] + current_bar['close']) / 3
-        upperband = hlc3 + self.atr_mult * atr
-        lowerband = hlc3 - self.atr_mult * atr
-
-        if self.supertrend_final_upperband is None or self.supertrend_final_lowerband is None:
-            self.supertrend_final_upperband = upperband
-            self.supertrend_final_lowerband = lowerband
-
-        if current_bar['close'] > self.supertrend_final_upperband:
-            self.supertrend_final_upperband = lowerband
-        else:
-            self.supertrend_final_upperband = min(upperband, self.supertrend_final_upperband)
-
-        if current_bar['close'] < self.supertrend_final_lowerband:
-            self.supertrend_final_lowerband = upperband
-        else:
-            self.supertrend_final_lowerband = max(lowerband, self.supertrend_final_lowerband)
-
-        if self.supertrend_trend == 1 and current_bar['close'] < self.supertrend_final_lowerband:
-            self.supertrend_trend = -1
-        elif self.supertrend_trend == -1 and current_bar['close'] > self.supertrend_final_upperband:
-            self.supertrend_trend = 1
-
-        return self.supertrend_trend
-
-    def _calculate_vwap_latest(self, current_price, current_volume, current_timestamp):
-        """Calculate real-time VWAP for the current day."""
-        current_day = current_timestamp.date()
-        if self.last_vwap_day is None or current_day != self.last_vwap_day:
-            self.daily_vwap_sum_tpv = 0.0
-            self.daily_vwap_sum_volume = 0.0
-            self.last_vwap_day = current_day
-            self.supertrend_final_upperband = None
-            self.supertrend_final_lowerband = None
-
-        self.daily_vwap_sum_tpv += current_price * current_volume
-        self.daily_vwap_sum_volume += current_volume
-
-        if self.daily_vwap_sum_volume > 0:
-            return self.daily_vwap_sum_tpv / self.daily_vwap_sum_volume
-        return np.nan
-    
-    def _calculate_rsi_latest(self):
-        """Calculate RSI for the latest bar in history."""
-        temp_df = self._get_bar_history_df()
-        if len(temp_df) < self.rsi_length + 1:
-            return np.nan
-        
-        series = temp_df['close'].tail(self.rsi_length * 2)
-        delta = series.diff()
-        gain = (delta.where(delta > 0, 0)).rolling(window=self.rsi_length).mean()
-        loss = (-delta.where(delta < 0, 0)).rolling(window=self.rsi_length).mean()
-        
-        rs = gain / loss if (loss != 0).all() else pd.Series(np.inf, index=gain.index)
-        rsi = 100 - (100 / (1 + rs))
-        return rsi.iloc[-1]
-
-    def _calculate_ema_latest(self, period):
-        """Calculate EMA for the latest bar in history."""
-        temp_df = self._get_bar_history_df()
-        if len(temp_df) < period:
-            return np.nan
-        
-        series = temp_df['close'].tail(period * 2)
-        return series.ewm(span=period, adjust=False).mean().iloc[-1]
+        # === MINIMUM BARS FOR SIGNALS ===
+        self.min_bars_for_signals = max(self.atr_len, self.rsi_length, self.slow_ema, 20, self.reentry_momentum_lookback)
 
     def is_in_session(self, timestamp):
         """Check if timestamp is within trading session"""
@@ -260,8 +152,6 @@ class ModularIntradayStrategy:
 
     def can_reenter(self, current_price, timestamp, current_bar_data):
         """Check if re-entry is allowed based on previous exit reason and new conditions."""
-        # CRITICAL FIX: If there has been no prior exit, this is a new entry, not a re-entry.
-        # By returning True, we allow the main 'buy_signal' to trigger the first trade.
         if self.last_exit_price is None:
             return True
 
@@ -272,11 +162,15 @@ class ModularIntradayStrategy:
             if not (current_price > (self.last_entry_price + self.reentry_price_buffer)): return False
             if self.use_ema_crossover and not current_bar_data.get('ema_bull', False): return False
 
-            indicator_bullish_check = (self.use_vwap and current_bar_data.get('vwap_bull', False)) or \
-                                      (self.use_supertrend and current_bar_data.get('supertrend') == 1)
+            # Check VWAP and Supertrend conditions
+            vwap_bull = current_bar_data.get('vwap_bull', False)
+            supertrend_bull = current_bar_data.get('supertrend') == 1
+            
+            indicator_bullish_check = (self.use_vwap and vwap_bull) or \
+                                      (self.use_supertrend and supertrend_bull)
             if not indicator_bullish_check: return False
 
-            if not self._check_reentry_momentum(self._get_bar_history_df()): return False
+            if not self._check_reentry_momentum(self.indicator_manager.get_bar_history_df()): return False
             
             return True
         return False
@@ -284,14 +178,11 @@ class ModularIntradayStrategy:
     def enter_position(self, price, timestamp, reason="Buy Signal"):
         """Enter a long position and set up dual stop loss system"""
         if self.position_size == 0:
-            # IMPROVEMENT: Realistic, risk-based position sizing.
             capital_to_risk = self.current_equity * (self.risk_per_trade_percent / 100.0)
-            # Risk per share/unit is defined by the base stop loss points.
             position_size = int(capital_to_risk / self.base_sl_points)
             
-            # Ensure a minimum position size if calculation results in zero.
             if position_size == 0:
-                position_size = 1 # Or your broker's minimum lot size
+                position_size = 1
             
             self.position_size = position_size
             self.position_entry_price = price
@@ -371,7 +262,6 @@ class ModularIntradayStrategy:
             trade = {'entry_time': self.position_entry_time, 'exit_time': timestamp, 'entry_price': self.position_entry_price, 'exit_price': price, 'quantity': exit_qty, 'pnl': pnl, 'reason': reason}
             self.trades.append(trade)
             
-            # IMPROVEMENT: Track equity on each trade event for efficiency.
             self.equity_curve.append({'timestamp': timestamp, 'equity': self.current_equity})
 
             if self.position_size <= 1e-9: # Effectively zero
@@ -379,84 +269,79 @@ class ModularIntradayStrategy:
                 self.last_entry_price = self.position_entry_price
                 if exit_classification: self.last_exit_reason = exit_classification
                 self._reset_position_state()
-    
-    def _update_current_bar_data(self, timestamp, price, volume):
-        """Updates the OHLCV for the current minute bar being formed."""
-        if self.current_bar_data['open'] is None:
-            self.current_bar_data['open'] = price
-            self.current_bar_data['high'] = price
-            self.current_bar_data['low'] = price
-            self.current_bar_data['timestamp'] = timestamp.replace(second=0, microsecond=0)
-        else:
-            self.current_bar_data['high'] = max(self.current_bar_data['high'], price)
-            self.current_bar_data['low'] = min(self.current_bar_data['low'], price)
-        
-        self.current_bar_data['close'] = price
-        self.current_bar_data['volume'] += volume
-
-    def _close_and_add_bar_to_history(self, bar_timestamp):
-        """Finalizes the current bar and adds it to the history."""
-        if self.current_bar_data['open'] is None: return
-
-        completed_bar = self.current_bar_data.copy()
-        completed_bar['timestamp'] = bar_timestamp
-        self._bar_history_list.append(completed_bar)
-
-        if len(self._bar_history_list) > self.max_bar_history_length:
-            self._bar_history_list.pop(0)
-
-        self.current_bar_data = {'open': None, 'high': None, 'low': None, 'close': None, 'volume': 0, 'timestamp': None}
-
-    def _update_indicators_on_history(self):
-        """Calculates all indicators on the latest completed bar in history."""
-        min_bars_for_indicators = max(self.atr_len, self.rsi_length, self.slow_ema, 50)
-        if len(self._bar_history_list) < min_bars_for_indicators: return
-
-        latest_bar_dict = self._bar_history_list[-1]
-        
-        if self.use_supertrend: latest_bar_dict['supertrend'] = self._calculate_supertrend_latest()
-        if self.use_rsi_filter: latest_bar_dict['rsi'] = self._calculate_rsi_latest()
-        if self.use_ema_crossover:
-            latest_bar_dict['ema_fast'] = self._calculate_ema_latest(self.fast_ema)
-            latest_bar_dict['ema_slow'] = self._calculate_ema_latest(self.slow_ema)
-            latest_bar_dict['ema_bull'] = latest_bar_dict['ema_fast'] > latest_bar_dict['ema_slow']
-        
-        latest_bar_dict['htf_trend'] = self._calculate_ema_latest(50)
-        latest_bar_dict['htf_bullish'] = latest_bar_dict['close'] > latest_bar_dict['htf_trend']
 
     def on_tick(self, tick_timestamp, tick_price, tick_volume):
         """Main entry point for processing a new tick from the WebSocket stream."""
         if tick_timestamp.tzinfo is None:
             tick_timestamp = self.ist_tz.localize(tick_timestamp)
 
-        self._update_current_bar_data(tick_timestamp, tick_price, tick_volume)
-        self.current_vwap = self._calculate_vwap_latest(tick_price, tick_volume, tick_timestamp)
-        self.current_vwap_bull = tick_price > self.current_vwap if not pd.isna(self.current_vwap) else False
-
+        # --- Bar Aggregation Logic ---
         current_minute = tick_timestamp.replace(second=0, microsecond=0)
-        if self.last_processed_minute and current_minute > self.last_processed_minute:
-            self._close_and_add_bar_to_history(self.last_processed_minute)
-            self._update_indicators_on_history()
-        self.last_processed_minute = current_minute
 
-        current_bar_row = {}
-        if self._bar_history_list:
-            current_bar_row = self._bar_history_list[-1].copy()
-            current_bar_row['vwap_bull'] = self.current_vwap_bull
+        # Initialize the minute tracker on the very first tick
+        if self.indicator_manager.last_processed_minute is None:
+            self.indicator_manager.last_processed_minute = current_minute
+
+        # If a new minute has started, the previous bar is now complete
+        if current_minute > self.indicator_manager.last_processed_minute:
+            # Close the completed bar and add it to history
+            self.indicator_manager.close_current_bar(self.indicator_manager.last_processed_minute)
+            
+            # Update the minute tracker to the new minute
+            self.indicator_manager.last_processed_minute = current_minute
+
+        # Always update the current (forming) bar with the latest tick data
+        self.indicator_manager.update_current_bar(tick_timestamp, tick_price, tick_volume)
         
-        min_bars_needed = max(self.atr_len, self.rsi_length, self.slow_ema, 50, self.reentry_momentum_lookback)
-        has_enough_history = len(self._bar_history_list) >= min_bars_needed
+        # --- Real-time Calculations & Position Management ---
+        current_vwap = self.indicator_manager.update_tick_indicators(tick_timestamp, tick_price, tick_volume)
+        current_vwap_bull = tick_price > current_vwap if not pd.isna(current_vwap) else False
+
+        # Get the latest bar data with all indicator values
+        current_bar_data = self.indicator_manager.get_latest_bar_data()
+        current_bar_data['vwap_bull'] = current_vwap_bull
+        
+        # Add VWAP bullish signal to current bar data
+        if 'vwap' in current_bar_data:
+            current_bar_data['vwap_bull'] = current_vwap_bull
+        
+        # Add EMA bullish signal
+        if 'ema_fast' in current_bar_data and 'ema_slow' in current_bar_data:
+            current_bar_data['ema_bull'] = current_bar_data['ema_fast'] > current_bar_data['ema_slow']
+        
+        # Add HTF bullish signal
+        if 'htf_trend' in current_bar_data:
+            current_bar_data['htf_bullish'] = current_bar_data['close'] > current_bar_data['htf_trend']
+
+        has_enough_history = self.indicator_manager.has_enough_history(self.min_bars_for_signals)
 
         # --- ENTRY LOGIC ---
         if self.position_size == 0 and self.should_allow_new_entries(tick_timestamp) and has_enough_history:
             buy_signal = True
-            if self.use_supertrend and current_bar_row.get('supertrend') != 1: buy_signal = False
-            if self.use_vwap and not current_bar_row.get('vwap_bull'): buy_signal = False
-            if self.use_ema_crossover and not current_bar_row.get('ema_bull'): buy_signal = False
-            if self.use_rsi_filter and not (self.rsi_oversold < current_bar_row.get('rsi', 50) < self.rsi_overbought): buy_signal = False
-            if not current_bar_row.get('htf_bullish'): buy_signal = False
             
-            can_reenter_flag = self.can_reenter(tick_price, tick_timestamp, current_bar_row)
+            # Check Supertrend
+            if self.use_supertrend and current_bar_data.get('supertrend') != 1: 
+                buy_signal = False
+            
+            # Check VWAP
+            if self.use_vwap and not current_vwap_bull: 
+                buy_signal = False
+            
+            # Check EMA crossover
+            if self.use_ema_crossover and not current_bar_data.get('ema_bull', False): 
+                buy_signal = False
+            
+            # Check RSI filter
+            if self.use_rsi_filter:
+                rsi_value = current_bar_data.get('rsi', 50)
+                if not (self.rsi_oversold < rsi_value < self.rsi_overbought): 
+                    buy_signal = False
+            
+            # Check HTF trend
+            if not current_bar_data.get('htf_bullish', False): 
+                buy_signal = False
+            
+            can_reenter_flag = self.can_reenter(tick_price, tick_timestamp, current_bar_data)
             
             if buy_signal and can_reenter_flag:
                 self.enter_position(tick_price, tick_timestamp)
@@ -521,4 +406,4 @@ class ModularIntradayStrategy:
             'profit_factor': profit_factor, 'max_drawdown': max_drawdown, 
             'total_return': total_return, 'final_equity': final_equity,
             'trades_df': trades_df, 'equity_df': equity_df
-        }
+        } 

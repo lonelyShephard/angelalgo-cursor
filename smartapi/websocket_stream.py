@@ -6,8 +6,8 @@ import os
 from datetime import datetime
 import pytz
 from SmartApi.smartWebSocketV2 import SmartWebSocketV2
-from logzero import logger
-from login import login # The class now depends on the login function
+from .log_utils import logger, tick_logger # Import our new loggers
+from .login import login # The class now depends on the login function
 
 class WebSocketStreamer:
     """
@@ -23,7 +23,7 @@ class WebSocketStreamer:
                                          Expected signature: on_tick(timestamp, price, volume)
             exchange_type (int): The exchange type (1: NSE_CM, 2: NSE_FO, etc.).
             feed_mode (int): The feed type (1: LTP, 2: Quote, 3: SnapQuote).
-            log_ticks (bool): If True, prints every tick to the log.
+            log_ticks (bool): If True, prints every tick to the console for real-time monitoring.
         """
         self.instrument_keys = instrument_keys
         self.on_tick_callback = on_tick_callback
@@ -113,9 +113,14 @@ class WebSocketStreamer:
                 # Volume is correctly treated as optional.
                 volume = int(message.get('last_traded_quantity', 0))
                 
+                # 1. Unconditionally log to the dedicated price_ticks.log file.
+                tick_logger.info(f"{timestamp.isoformat()},{price:.2f},{volume}")
+
                 if self.on_tick_callback:
+                    # 2. Conditionally print to the console for visibility.
                     if self.log_ticks:
-                        logger.info(f"LIVE TICK: {timestamp} | Price: {price:.2f} | Volume: {volume}")
+                        print(f"LIVE TICK: {timestamp.strftime('%Y-%m-%d %H:%M:%S')} | Price: {price:<8.2f} | Volume: {volume}")
+                    # 3. Always call the strategy callback.
                     self.on_tick_callback(timestamp, price, volume)
         except Exception as e:
             logger.error(f"Error processing tick message: {e}\nMessage: {message}")

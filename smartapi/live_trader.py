@@ -4,9 +4,9 @@ from tabulate import tabulate
 import pandas as pd
 import os
 # Import your classes
-from smartapi.log_utils import logger # Import pre-configured logger
-from strategy import ModularIntradayStrategy
-from websocket_stream import WebSocketStreamer
+from .log_utils import logger # Import pre-configured logger
+from .strategy import ModularIntradayStrategy
+from .websocket_stream import WebSocketStreamer
 
 class LiveTradingBot:
     """
@@ -31,7 +31,8 @@ class LiveTradingBot:
             'price': price,
             'volume': volume
         })
-        self.strategy.on_tick(timestamp, price, volume)
+        if self.strategy:
+            self.strategy.on_tick(timestamp, price, volume)
 
     def run(self):
         """Sets up and runs the live trading strategy and status monitor."""
@@ -68,10 +69,15 @@ class LiveTradingBot:
 
     def log_status(self):
         """Logs the current status of the strategy."""
-        if not self.strategy or not self.strategy._bar_history_list:
+        if not self.strategy:
             return
 
-        bars_collected = len(self.strategy._bar_history_list)
+        # Get bar history from indicator manager
+        bar_history = self.strategy.indicator_manager.get_bar_history()
+        if not bar_history:
+            return
+
+        bars_collected = len(bar_history)
         min_bars_needed = self.strategy.min_bars_for_signals
 
         if self.strategy.position_size > 0:
@@ -88,12 +94,16 @@ class LiveTradingBot:
             )
             logger.info(status_msg)
         else:
-            latest_bar = self.strategy._bar_history_list[-1]
+            latest_bar = bar_history[-1]
             st_trend = "Bull" if latest_bar.get('supertrend') == 1 else "Bear"
             ema_cross = "Bull" if latest_bar.get('ema_bull') else "Bear"
             rsi_val = f"{latest_bar.get('rsi', 'N/A'):.1f}" if isinstance(latest_bar.get('rsi'), float) else "N/A"
             htf_trend = "Bull" if latest_bar.get('htf_bullish') else "Bear"
-            vwap_bull = "Bull" if self.strategy.current_vwap_bull else "Bear"
+            
+            # Get VWAP status from indicator manager
+            vwap_value = self.strategy.indicator_manager.get_indicator_value('vwap')
+            current_price = latest_bar.get('close', 0)
+            vwap_bull = "Bull" if current_price > vwap_value else "Bear"
             
             status_msg = (
                 f"STATUS: Awaiting signal | Supertrend: {st_trend}, EMA: {ema_cross}, "
@@ -145,6 +155,7 @@ class LiveTradingBot:
 
                 df_ticks = pd.DataFrame(self.tick_data_buffer)
                 csv_filename = os.path.join(data_folder_path, f"live_ticks_{pd.Timestamp.now().strftime('%Y%m%d_%H%M%S')}.csv")
+                df_ticks.to_csv(csv_filename, index=False)
                 logger.info(f"Raw tick data saved to {csv_filename}")
             except Exception as e:
                 logger.error(f"Failed to save raw tick data to CSV: {e}")

@@ -3,8 +3,8 @@ from tkinter import ttk, messagebox
 import threading
 
 # Import the refactored bot class and the strategy class to get defaults
-from live_trader import LiveTradingBot
-from strategy import ModularIntradayStrategy
+from .live_trader import LiveTradingBot
+from .strategy import ModularIntradayStrategy
 
 class LiveTraderGUI:
     """
