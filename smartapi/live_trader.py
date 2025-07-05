@@ -13,12 +13,13 @@ class LiveTradingBot:
     Encapsulates the entire live trading logic.
     Can be instantiated and run from a GUI or a simple script.
     """
-    def __init__(self, instrument_token, strategy_params, exchange_type=1, feed_mode=2, log_ticks=False):
+    def __init__(self, instrument_token, strategy_params, exchange_type=1, feed_mode=2, log_ticks=False, symbol=None):
         self.instrument_token = instrument_token
         self.strategy_params = strategy_params
         self.exchange_type = exchange_type
         self.feed_mode = feed_mode
         self.log_ticks = log_ticks
+        self.symbol = symbol or f"Token_{instrument_token}"  # Use symbol name or fallback to token
         self.strategy = None
         self.streamer = None
         self._stop_event = threading.Event()
@@ -81,12 +82,7 @@ class LiveTradingBot:
         min_bars_needed = self.strategy.min_bars_for_signals
 
         if self.strategy.position_size > 0:
-            status_msg = (
-                f"STATUS: In Position | Size={self.strategy.position_size}, "
-                f"Entry={self.strategy.position_entry_price:.2f}, "
-                f"Current SL={self.strategy.get_effective_stop_price():.2f}"
-            )
-            logger.info(status_msg)
+            logger.info(f"STATUS: In Position | Symbol={self.symbol}, Size={self.strategy.position_size}, Entry={self.strategy.position_entry_price:.2f}, Current SL={self.strategy.get_effective_stop_price():.2f}")
         elif bars_collected < min_bars_needed:
             status_msg = (
                 f"STATUS: Collecting initial bar data... "
@@ -106,7 +102,7 @@ class LiveTradingBot:
             vwap_bull = "Bull" if current_price > vwap_value else "Bear"
             
             status_msg = (
-                f"STATUS: Awaiting signal | Supertrend: {st_trend}, EMA: {ema_cross}, "
+                f"STATUS: Awaiting signal | Symbol={self.symbol}, Supertrend: {st_trend}, EMA: {ema_cross}, "
                 f"RSI: {rsi_val}, VWAP: {vwap_bull}, HTF: {htf_trend}"
             )
             logger.info(status_msg)

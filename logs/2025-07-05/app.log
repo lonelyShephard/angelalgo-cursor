@@ -1,0 +1,14 @@
+[I 250705 07:32:48 websocket_stream:153] Connecting to WebSocket feed...
+[I 250705 07:32:48 websocket_stream:75] WebSocket Connection Opened.
+[I 250705 07:32:48 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 2 with mode 2
+[I 250705 07:36:27 live_trader:116] --- Shutdown signal received ---
+[I 250705 07:36:27 live_trader:120] Stopping data stream...
+[I 250705 07:36:27 websocket_stream:173] Stopping WebSocket connection...
+[W 250705 07:36:27 smartWebSocketV2:319] Attempting to resubscribe/reconnect (Attempt 1)...
+[W 250705 07:36:31 live_trader:64] WebSocket connection appears to have been lost.
+[W 250705 07:36:32 websocket_stream:181] WebSocket thread did not terminate gracefully.
+[I 250705 07:36:32 websocket_stream:183] WebSocket has been stopped.
+[I 250705 07:36:32 live_trader:124] --- Generating Final Trade Report ---
+[E 250705 07:36:32 live_trader:128] Could not generate report: No trades executed
+[I 250705 07:36:32 live_trader:155] Raw tick data saved to C:\Users\user\projects\angelalgo Cursor\smartapi\data\live_ticks_20250705_073632.csv
+[I 250705 07:36:32 live_trader:158] --- Bot has been shut down gracefully. ---

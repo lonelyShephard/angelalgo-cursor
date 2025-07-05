@@ -2,8 +2,13 @@ import tkinter as tk
 import threading
 import time
 import os
+import re
 
 PRICE_TICK_LOG = "smartapi/price_ticks.log"
+APP_LOG_PATH = os.path.join('logs', time.strftime('%Y-%m-%d').replace('-', ''), 'app.log')
+# Fallback: try logs/YYYY-MM-DD/app.log, else logs/YYYYMMDD/app.log, else logs/2025-07-04/app.log
+
+LIVE_TRADER_LOG_PATH = "smartapi/live_trader.log"
 
 print("Script started")
 
@@ -11,14 +16,16 @@ print("Looking for log file at:", os.path.abspath(PRICE_TICK_LOG))
 print("Exists?", os.path.exists(PRICE_TICK_LOG))
 
 class VisualPriceTickIndicator:
-    def __init__(self, initial_capital=100000, log_path='smartapi/price_ticks.log'):
+    def __init__(self, initial_capital=100000, log_path='smartapi/price_ticks.log', app_log_path=None):
         self.initial_capital = initial_capital
         self.current_equity = initial_capital
         self.position_active = False
         self.position_entry_price = 0
         self.current_price = 0
         self.position_size = 0
+        self.stop_loss = None
         self.log_path = log_path
+        self.app_log_path = app_log_path or os.path.join('logs', time.strftime('%Y-%m-%d').replace('-', ''), 'app.log')
         self.latest_tick = ""
         self.root = tk.Tk()
         self.root.title("Bot Status & Price Tick")
@@ -46,29 +53,94 @@ class VisualPriceTickIndicator:
                 time.sleep(1)
             except:
                 break
+    def _parse_app_log(self):
+        # Try to find the latest status line in the app log
+        log_path = self.app_log_path
+        if not os.path.exists(log_path):
+            # fallback to logs/2025-07-04/app.log
+            fallback = os.path.join('logs', '2025-07-04', 'app.log')
+            if os.path.exists(fallback):
+                log_path = fallback
+            else:
+                return None
+        try:
+            with open(log_path, 'r', encoding='utf-8', errors='ignore') as f:
+                lines = f.readlines()[-200:]
+            for line in reversed(lines):
+                if 'STATUS:' in line:
+                    if 'In Position' in line:
+                        # Example: STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+                        m = re.search(r'Size=(\d+), Entry=([\d.]+), Current SL=([\d.]+)', line)
+                        if m:
+                            size = int(m.group(1))
+                            entry = float(m.group(2))
+                            sl = float(m.group(3))
+                            return {'status': 'IN POSITION', 'size': size, 'entry': entry, 'sl': sl}
+                    elif 'Awaiting signal' in line:
+                        return {'status': 'AWAITING SIGNAL'}
+            return None
+        except Exception as e:
+            return None
     def _update_display(self):
-        # Determine background color and info text
-        if not self.position_active:
-            bg_color = 'gray'
-            pnl_text = "WAIT"
-        else:
-            if self.position_size > 0:
-                pnl = (self.current_price - self.position_entry_price) * self.position_size
-            else:
-                pnl = (self.position_entry_price - self.current_price) * abs(self.position_size)
-            total_pnl = self.current_equity - self.initial_capital
-            pnl_percent = (total_pnl / self.initial_capital) * 100
-            if pnl >= 0:
-                bg_color = 'green'
-                pnl_text = f"+{pnl_percent:.1f}%"
-            else:
-                bg_color = 'red'
-                pnl_text = f"{pnl_percent:.1f}%"
+        # Get latest status from live_trader.log
+        status_info = parse_live_trader_log()
         # Get latest price tick info
         latest_tick = self._get_latest_tick()
-        # Compose info text
-        info = f"Status: {pnl_text}\n{latest_tick}"
-        self.info_label.config(text=info, bg=bg_color)
+        # Extract price and volume from latest_tick
+        price = '-'
+        volume = '-'
+        try:
+            for line in latest_tick.split('\n'):
+                if line.startswith('Price:'):
+                    price = float(line.split(':', 1)[1].strip())
+                if line.startswith('Volume:'):
+                    volume = line.split(':', 1)[1].strip()
+        except Exception:
+            pass
+        # Compose info
+        if status_info is None:
+            status = "AWAITING SIGNAL"
+            symbol = '-'
+            entry = '-'
+            sl = '-'
+            bg_color = 'gray'
+            self.position_active = False
+        elif status_info['status'] == 'IN POSITION':
+            status = "IN POSITION"
+            symbol = status_info.get('symbol', '-')
+            entry = status_info['entry']
+            sl = status_info['sl']
+            self.position_active = True
+            self.position_entry_price = float(entry)
+            self.stop_loss = float(sl)
+            try:
+                current_price = float(price)
+            except Exception:
+                current_price = self.position_entry_price
+            self.current_price = current_price
+            in_profit = self.current_price > self.position_entry_price
+            bg_color = 'green' if in_profit else 'red'
+        else:
+            status = "AWAITING SIGNAL"
+            symbol = status_info.get('symbol', '-')
+            entry = '-'
+            sl = '-'
+            bg_color = 'gray'
+            self.position_active = False
+        # Transposed table: Parameter | Value
+        table = (
+            f"+-------------------+-------------------+\n"
+            f"| {'Parameter':<17} | {'Value':<17} |\n"
+            f"+-------------------+-------------------+\n"
+            f"| {'Status':<17} | {str(status):<17} |\n"
+            f"| {'Symbol':<17} | {str(symbol):<17} |\n"
+            f"| {'Entry':<17} | {str(entry):<17} |\n"
+            f"| {'SL':<17} | {str(sl):<17} |\n"
+            f"| {'Price':<17} | {str(price):<17} |\n"
+            f"| {'Volume':<17} | {str(volume):<17} |\n"
+            f"+-------------------+-------------------+"
+        )
+        self.info_label.config(text=table, bg=bg_color, font=("Consolas", self.current_font_size, "bold"))
         self.root.config(bg=bg_color)
     def _on_resize(self, event):
         # Use the label's height for font size calculation, but scale more moderately
@@ -102,6 +174,12 @@ class VisualPriceTickIndicator:
                     # Split dt into date and time if possible
                     if 'T' in dt:
                         date_part, time_part = dt.split('T', 1)
+                        # Remove timezone suffix like +5:30 if present
+                        if '+' in time_part:
+                            time_part = time_part.split('+')[0]
+                        elif '-' in time_part and time_part.count(':') > 1:
+                            # Handles cases like 12:34:56-05:00
+                            time_part = time_part.split('-')[0]
                     else:
                         date_part, time_part = dt, ''
                     return f"Date: {date_part}\nTime: {time_part}\nPrice: {price}\nVolume: {volume}"
@@ -161,6 +239,36 @@ def close_visual_indicator():
     if _visual_indicator:
         _visual_indicator.close()
         _visual_indicator = None
+
+def parse_live_trader_log(log_path=LIVE_TRADER_LOG_PATH):
+    if not os.path.exists(log_path):
+        return None
+    try:
+        with open(log_path, 'r', encoding='utf-8', errors='ignore') as f:
+            lines = f.readlines()[-200:]  # Only check last 200 lines for speed
+        for line in reversed(lines):
+            if 'STATUS:' in line:
+                if 'In Position' in line:
+                    # Extract symbol, size, entry, and SL
+                    symbol_match = re.search(r'Symbol=([^,]+)', line)
+                    size_match = re.search(r'Size=(\d+)', line)
+                    entry_match = re.search(r'Entry=([\d.]+)', line)
+                    sl_match = re.search(r'Current SL=([\d.]+)', line)
+                    
+                    if size_match and entry_match and sl_match:
+                        size = int(size_match.group(1))
+                        entry = float(entry_match.group(1))
+                        sl = float(sl_match.group(1))
+                        symbol = symbol_match.group(1) if symbol_match else 'Unknown'
+                        return {'status': 'IN POSITION', 'symbol': symbol, 'size': size, 'entry': entry, 'sl': sl}
+                elif 'Awaiting signal' in line:
+                    # Extract symbol from awaiting signal message
+                    symbol_match = re.search(r'Symbol=([^,]+)', line)
+                    symbol = symbol_match.group(1) if symbol_match else 'Unknown'
+                    return {'status': 'AWAITING SIGNAL', 'symbol': symbol}
+        return None
+    except Exception as e:
+        return None
 
 if __name__ == "__main__":
     indicator = VisualPriceTickIndicator()

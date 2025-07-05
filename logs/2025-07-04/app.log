@@ -1,0 +1,1395 @@
+[I 250704 09:31:52 websocket_stream:153] Connecting to WebSocket feed...
+[I 250704 09:32:07 websocket_stream:75] WebSocket Connection Opened.
+[I 250704 09:32:07 websocket_stream:84] Subscribing to tokens: ['40047'] on exchange type 2 with mode 2
+[I 250704 09:33:03 live_trader:95] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 09:33:18 live_trader:95] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 09:33:33 live_trader:95] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 09:33:48 live_trader:95] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 09:34:03 live_trader:95] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 09:34:18 live_trader:95] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 09:34:33 live_trader:95] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 09:34:48 live_trader:95] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 09:35:03 live_trader:95] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 09:35:18 live_trader:95] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 09:35:33 live_trader:95] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 09:35:48 live_trader:95] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 09:36:03 live_trader:95] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 09:36:18 live_trader:95] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 09:36:33 live_trader:95] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 09:36:48 live_trader:95] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 09:37:03 live_trader:95] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 09:37:18 live_trader:95] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 09:37:33 live_trader:95] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 09:37:48 live_trader:95] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 09:38:03 live_trader:95] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 09:38:18 live_trader:95] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 09:38:33 live_trader:95] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 09:38:48 live_trader:95] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 09:39:03 live_trader:95] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 09:39:18 live_trader:95] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 09:39:33 live_trader:95] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 09:39:48 live_trader:95] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 09:40:03 live_trader:95] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 09:40:18 live_trader:95] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 09:40:33 live_trader:95] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 09:40:48 live_trader:95] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 09:41:03 live_trader:95] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 09:41:18 live_trader:95] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 09:41:33 live_trader:95] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 09:41:48 live_trader:95] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 09:42:03 live_trader:95] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 09:42:18 live_trader:95] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 09:42:33 live_trader:95] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 09:42:48 live_trader:95] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 09:43:03 live_trader:95] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 09:43:18 live_trader:95] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 09:43:33 live_trader:95] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 09:43:48 live_trader:95] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 09:44:03 live_trader:95] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 09:44:18 live_trader:95] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 09:44:33 live_trader:95] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 09:44:48 live_trader:95] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 09:45:03 live_trader:95] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 09:45:18 live_trader:95] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 09:45:33 live_trader:95] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 09:45:48 live_trader:95] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 09:46:03 live_trader:95] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 09:46:18 live_trader:95] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 09:46:33 live_trader:95] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 09:46:48 live_trader:95] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 09:47:03 live_trader:95] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 09:47:18 live_trader:95] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 09:47:33 live_trader:95] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 09:47:48 live_trader:95] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 09:48:03 live_trader:95] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 09:48:18 live_trader:95] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 09:48:33 live_trader:95] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 09:48:48 live_trader:95] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 09:49:03 live_trader:95] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 09:49:18 live_trader:95] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 09:49:33 live_trader:95] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 09:49:48 live_trader:95] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 09:50:03 live_trader:95] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 09:50:18 live_trader:95] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 09:50:33 live_trader:95] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 09:50:48 live_trader:95] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 09:51:03 live_trader:95] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 09:51:18 live_trader:95] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 09:51:34 live_trader:95] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 09:51:49 live_trader:95] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 09:52:04 live_trader:95] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 09:52:19 live_trader:95] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 09:52:34 live_trader:95] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 09:52:49 live_trader:95] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 09:53:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:53:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:53:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:53:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:54:04 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:54:19 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:54:34 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:54:49 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:55:04 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:55:19 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:55:34 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:55:49 live_trader:89] STATUS: In Position | Size=142, Entry=137.20, Current SL=130.20
+[I 250704 09:56:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:56:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:56:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:56:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:57:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:57:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:57:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:57:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 09:58:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:58:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:58:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:58:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:59:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:59:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:59:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 09:59:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:00:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:00:19 live_trader:89] STATUS: In Position | Size=141, Entry=142.80, Current SL=135.80
+[I 250704 10:00:34 live_trader:89] STATUS: In Position | Size=141, Entry=142.80, Current SL=135.80
+[I 250704 10:00:49 live_trader:89] STATUS: In Position | Size=141, Entry=142.80, Current SL=135.80
+[I 250704 10:01:04 live_trader:89] STATUS: In Position | Size=141, Entry=142.80, Current SL=135.80
+[I 250704 10:01:19 live_trader:89] STATUS: In Position | Size=141, Entry=142.80, Current SL=135.80
+[I 250704 10:01:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:01:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:02:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:02:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:02:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:02:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:03:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:03:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:03:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:03:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:04:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:04:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:04:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:04:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:05:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:05:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:05:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:05:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:06:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:06:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:06:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:06:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:07:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:07:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:07:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:07:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:08:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:08:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:08:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:08:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:09:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:09:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:09:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:09:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:10:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:10:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:10:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:10:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:11:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:11:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:11:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:11:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:12:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:12:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:12:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:12:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:13:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:13:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:13:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:13:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:14:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:14:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:14:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:14:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:15:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:15:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:15:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:15:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:16:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:16:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:16:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:16:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:17:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:17:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:17:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:17:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:18:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:18:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:18:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:18:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:19:04 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:19:19 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:19:34 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:19:49 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:20:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:20:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:20:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:20:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:21:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:21:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:21:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:21:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:22:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:22:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:22:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:22:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:23:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:23:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:23:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:23:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:24:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:24:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:24:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:24:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:25:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:25:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:25:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:25:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:26:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:26:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:26:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:26:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:27:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:27:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:27:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:27:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:28:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:28:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:28:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:28:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:29:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:29:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:29:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:29:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:30:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:30:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:30:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:30:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:31:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:31:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:31:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:31:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:32:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:32:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:32:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:32:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:33:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:33:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:33:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:33:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:34:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:34:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:34:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:34:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:35:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:35:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:35:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:35:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:36:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:36:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:36:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:36:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:37:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:37:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:37:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:37:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:38:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:38:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:38:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:38:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:39:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:39:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:39:35 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:39:50 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:40:05 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:40:20 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:40:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:40:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:41:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:41:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:41:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:41:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:42:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:42:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:42:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:42:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:43:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:43:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:43:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:43:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:44:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:44:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:44:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:44:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:45:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:45:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:45:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:45:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:46:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:46:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:46:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:46:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:47:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:47:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:47:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:47:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:48:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:48:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:48:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:48:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:49:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:49:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:49:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:49:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:50:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:50:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:50:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:50:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:51:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:51:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:51:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:51:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:52:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:52:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:52:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:52:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:53:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:53:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:53:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:53:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:54:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:54:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:54:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:54:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:55:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:55:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:55:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:55:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:56:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:56:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:56:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:56:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:57:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:57:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:57:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:57:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:58:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:58:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:58:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:58:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 10:59:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:59:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:59:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 10:59:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:00:06 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:00:21 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:00:36 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:00:51 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:01:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:01:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:01:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:01:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:02:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:02:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:02:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:02:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:03:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:03:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:03:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:03:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:04:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:04:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:04:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:04:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:05:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:05:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:05:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:05:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:06:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:06:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:06:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:06:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:07:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:07:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:07:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:07:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:08:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:08:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:08:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:08:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:09:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:09:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:09:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:09:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:10:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:10:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:10:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:10:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:11:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:11:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:11:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:11:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:12:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:12:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:12:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:12:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:13:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:13:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:13:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:13:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:14:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:14:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:14:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:14:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:15:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:15:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:15:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:15:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:16:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:16:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:16:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:16:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:17:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:17:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:17:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:17:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:18:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:18:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:18:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:18:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:19:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:19:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:19:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:19:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 11:20:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:20:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:20:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:20:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:21:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:21:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:21:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:21:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:22:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:22:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:22:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:22:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:23:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:23:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:23:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:23:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:24:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:24:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:24:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:24:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:25:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:25:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:25:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:25:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:26:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:26:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:26:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:26:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:27:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:27:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:27:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:27:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:28:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:28:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:28:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:28:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:29:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:29:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:29:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:29:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:30:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:30:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:30:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:30:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:31:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:31:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:31:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:31:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:32:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:32:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:32:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:32:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:33:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:33:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:33:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:33:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:34:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:34:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:34:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:34:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:35:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:35:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:35:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:35:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:36:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:36:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:36:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:36:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:37:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:37:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:37:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:37:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:38:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:38:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:38:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:38:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:39:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:39:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:39:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:39:52 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:40:07 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:40:22 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:40:37 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:40:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:41:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:41:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:41:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:41:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:42:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:42:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:42:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:42:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:43:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:43:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:43:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:43:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:44:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:44:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:44:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:44:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:45:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:45:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:45:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:45:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:46:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:46:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:46:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:46:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:47:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:47:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:47:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:47:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:48:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:48:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:48:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:48:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:49:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:49:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:49:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:49:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:50:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:50:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:50:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:50:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:51:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:51:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:51:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:51:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:52:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:52:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:52:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:52:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:53:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:53:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:53:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:53:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:54:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:54:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:54:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:54:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:55:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:55:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:55:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:55:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:56:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:56:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:56:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:56:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:57:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:57:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:57:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:57:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:58:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:58:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:58:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:58:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:59:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:59:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:59:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 11:59:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:00:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:00:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:00:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:00:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:01:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:01:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:01:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:01:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:02:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:02:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:02:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:02:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:03:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:03:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:03:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:03:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:04:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:04:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:04:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:04:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:05:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:05:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:05:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:05:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:06:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:06:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:06:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:06:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:07:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:07:23 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:07:38 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:07:53 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:08:08 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:08:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:08:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:08:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:09:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:09:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:09:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:09:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:10:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:10:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:10:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:10:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:11:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:11:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:11:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:11:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:12:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:12:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:12:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:12:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:13:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:13:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:13:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:13:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:14:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:14:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:14:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:14:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:15:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:15:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:15:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:15:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:16:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:16:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:16:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:16:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:17:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:17:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:17:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:17:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:18:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:18:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:18:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:18:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:19:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:19:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:19:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:19:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:20:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:20:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:20:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:20:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:21:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:21:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:21:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:21:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:22:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:22:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:22:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:22:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:23:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:23:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:23:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:23:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:24:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:24:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:24:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:24:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:25:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:25:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:25:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:25:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:26:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:26:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:26:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:26:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:27:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:27:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:27:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:27:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:28:09 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:28:24 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:28:39 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:28:54 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:29:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:29:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:29:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:29:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:30:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:30:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:30:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:30:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:31:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:31:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:31:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:31:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:32:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:32:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:32:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:32:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:33:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:33:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:33:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:33:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:34:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:34:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:34:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:34:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:35:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:35:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:35:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:35:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:36:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:36:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:36:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:36:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:37:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:37:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:37:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:37:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:38:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:38:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:38:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:38:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:39:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:39:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:39:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:39:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:40:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:40:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:40:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:40:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:41:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:41:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:41:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:41:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:42:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:42:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:42:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:42:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:43:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:43:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:43:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:43:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:44:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:44:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:44:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:44:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:45:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:45:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:45:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:45:55 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:46:10 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:46:25 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:46:40 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:46:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:47:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:47:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:47:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:47:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:48:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:48:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:48:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:48:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:49:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:49:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:49:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:49:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:50:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:50:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:50:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:50:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:51:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:51:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:51:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:51:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:52:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:52:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:52:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:52:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:53:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:53:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:53:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:53:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:54:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:54:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:54:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:54:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:55:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:55:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:55:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:55:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:56:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:56:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:56:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:56:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:57:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:57:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:57:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:57:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:58:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:58:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:58:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:58:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:59:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:59:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:59:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 12:59:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:00:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:00:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:00:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:00:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:01:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:01:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:01:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:01:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:02:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:02:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:02:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:02:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:03:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:03:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:03:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:03:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:04:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:04:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:04:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:04:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:05:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:05:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:05:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:05:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:06:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:06:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:06:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:06:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:07:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:07:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:07:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:07:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:08:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:08:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:08:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:08:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:09:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:09:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:09:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:09:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:10:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:10:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:10:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:10:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:11:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:11:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:11:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:11:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:12:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:12:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:12:41 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:12:56 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:13:11 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:13:26 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:13:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:13:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:14:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:14:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:14:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:14:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:15:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:15:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:15:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:15:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:16:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:16:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:16:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:16:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:17:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:17:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:17:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:17:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:18:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:18:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:18:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:18:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:19:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:19:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:19:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:19:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:20:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:20:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:20:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:20:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:21:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:21:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:21:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:21:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:22:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:22:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:22:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:22:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:23:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:23:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:23:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:23:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:24:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:24:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:24:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:24:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:25:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:25:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:25:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:25:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:26:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:26:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:26:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:26:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:27:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:27:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:27:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:27:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:28:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:28:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:28:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:28:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:29:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:29:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:29:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:29:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:30:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:30:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:30:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:30:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:31:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:31:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:31:42 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:31:57 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:32:12 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:32:27 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:32:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:32:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:33:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:33:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:33:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:33:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:34:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:34:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:34:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:34:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:35:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:35:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:35:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:35:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:36:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:36:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:36:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:36:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:37:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:37:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:37:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:37:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:38:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:38:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:38:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:38:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:39:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:39:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:39:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:39:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:40:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:40:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:40:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:40:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:41:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:41:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:41:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:41:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:42:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:42:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:42:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:42:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:43:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:43:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:43:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:43:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:44:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:44:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:44:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:44:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:45:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:45:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:45:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:45:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:46:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:46:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:46:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:46:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:47:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:47:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:47:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:47:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:48:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:48:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:48:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:48:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:49:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:49:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:49:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:49:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:50:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:50:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:50:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:50:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:51:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:51:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:51:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:51:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:52:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:52:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:52:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:52:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:53:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:53:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:53:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:53:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:54:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:54:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:54:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:54:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:55:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:55:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:55:43 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:55:58 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:56:13 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:56:28 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:56:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:56:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:57:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:57:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:57:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:57:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:58:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:58:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:58:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:58:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:59:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:59:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:59:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 13:59:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:00:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:00:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:00:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:00:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:01:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:01:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:01:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:01:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:02:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:02:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:02:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:02:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:03:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:03:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:03:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:03:59 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:04:14 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:04:29 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:04:44 live_trader:112] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250704 14:11:28 websocket_stream:153] Connecting to WebSocket feed...
+[I 250704 14:11:28 websocket_stream:75] WebSocket Connection Opened.
+[I 250704 14:11:28 websocket_stream:84] Subscribing to tokens: ['40047'] on exchange type 2 with mode 2
+[I 250704 14:12:09 live_trader:90] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 14:12:24 live_trader:90] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 14:12:39 live_trader:90] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 14:12:54 live_trader:90] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250704 14:13:09 live_trader:90] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 14:13:24 live_trader:90] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 14:13:39 live_trader:90] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 14:13:54 live_trader:90] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250704 14:14:09 live_trader:90] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 14:14:24 live_trader:90] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 14:14:39 live_trader:90] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 14:14:54 live_trader:90] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250704 14:15:09 live_trader:90] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 14:15:24 live_trader:90] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 14:15:39 live_trader:90] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 14:15:54 live_trader:90] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250704 14:16:09 live_trader:90] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 14:16:24 live_trader:90] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 14:16:39 live_trader:90] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 14:16:54 live_trader:90] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250704 14:17:09 live_trader:90] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 14:17:24 live_trader:90] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 14:17:39 live_trader:90] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 14:17:54 live_trader:90] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250704 14:18:09 live_trader:90] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 14:18:24 live_trader:90] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 14:18:39 live_trader:90] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 14:18:54 live_trader:90] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250704 14:19:09 live_trader:90] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 14:19:24 live_trader:90] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 14:19:39 live_trader:90] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 14:19:54 live_trader:90] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250704 14:20:09 live_trader:90] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 14:20:24 live_trader:90] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 14:20:39 live_trader:90] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 14:20:54 live_trader:90] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250704 14:21:09 live_trader:90] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 14:21:24 live_trader:90] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 14:21:39 live_trader:90] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 14:21:54 live_trader:90] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250704 14:22:09 live_trader:90] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 14:22:24 live_trader:90] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 14:22:39 live_trader:90] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 14:22:54 live_trader:90] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250704 14:23:09 live_trader:90] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 14:23:24 live_trader:90] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 14:23:39 live_trader:90] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 14:23:54 live_trader:90] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250704 14:24:09 live_trader:90] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 14:24:24 live_trader:90] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 14:24:39 live_trader:90] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 14:24:54 live_trader:90] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250704 14:25:09 live_trader:90] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 14:25:24 live_trader:90] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 14:25:39 live_trader:90] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 14:25:54 live_trader:90] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250704 14:26:09 live_trader:90] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 14:26:24 live_trader:90] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 14:26:39 live_trader:90] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 14:26:54 live_trader:90] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250704 14:27:09 live_trader:90] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 14:27:24 live_trader:90] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 14:27:39 live_trader:90] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 14:27:54 live_trader:90] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250704 14:28:09 live_trader:90] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 14:28:24 live_trader:90] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 14:28:39 live_trader:90] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 14:28:54 live_trader:90] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250704 14:29:09 live_trader:90] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 14:29:24 live_trader:90] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 14:29:39 live_trader:90] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 14:29:54 live_trader:90] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250704 14:30:09 live_trader:90] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 14:30:24 live_trader:90] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 14:30:39 live_trader:90] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 14:30:54 live_trader:90] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250704 14:31:09 live_trader:90] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 14:31:24 live_trader:90] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 14:31:39 live_trader:90] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 14:31:54 live_trader:90] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250704 14:32:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:32:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:32:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:32:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:33:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:33:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:33:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:33:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:34:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:34:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:34:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:34:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:35:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:35:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:35:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:35:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:36:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:36:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:36:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:36:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:37:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:37:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:37:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:37:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:38:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:38:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:38:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:38:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:39:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:39:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:39:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:39:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:40:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:40:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:40:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:40:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:41:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:41:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:41:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:41:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:42:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:42:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:42:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:42:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:43:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:43:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:43:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:43:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:44:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:44:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:44:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:44:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:45:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:45:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:45:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:45:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:46:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:46:24 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:46:39 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:46:54 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:47:09 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:47:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:47:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:47:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:48:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:48:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:48:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:48:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:49:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:49:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:49:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:49:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:50:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:50:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:50:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:50:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:51:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:51:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:51:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:51:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:52:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:52:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:52:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:52:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:53:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:53:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:53:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:53:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:54:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:54:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:54:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:54:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:55:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:55:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:55:40 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:55:55 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:56:10 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:56:25 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:56:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:56:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:57:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:57:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:57:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:57:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:58:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:58:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:58:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:58:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:59:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:59:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:59:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 14:59:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:00:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:00:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:00:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:00:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:01:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:01:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:01:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:01:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:02:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:02:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:02:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:02:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:03:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:03:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:03:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:03:56 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:04:11 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:04:26 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:04:41 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:04:57 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:05:12 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:05:27 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:05:42 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:05:57 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:06:12 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:06:27 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:06:42 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:06:57 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:07:12 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:07:27 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:07:42 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:07:57 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:08:12 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:08:27 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:08:43 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:08:58 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:09:13 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:09:28 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:09:43 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:09:58 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:10:13 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:10:28 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:10:43 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:10:58 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:11:13 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:11:28 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:11:43 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:11:59 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:12:15 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:12:30 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:12:45 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:13:00 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:13:15 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:13:30 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:13:45 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:14:00 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:14:16 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:14:31 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:14:46 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:15:01 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:15:16 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:15:31 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:15:47 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:16:02 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:16:17 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:16:32 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:16:47 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:17:02 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:17:17 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:17:32 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:17:47 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:18:02 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:18:18 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:18:33 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:18:48 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:19:03 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:19:18 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:19:33 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:19:48 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:20:03 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:20:19 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:20:34 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:20:49 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:21:04 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:21:19 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:21:35 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:21:50 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:22:05 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:22:20 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:22:35 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:22:50 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:23:05 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:23:20 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:23:35 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:23:50 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:24:05 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:24:20 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:24:35 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:24:50 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:25:05 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:25:20 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:25:35 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:25:50 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:26:05 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:26:20 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:26:35 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:26:51 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:27:06 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:27:21 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250704 15:27:36 live_trader:107] STATUS: Awaiting signal | Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear

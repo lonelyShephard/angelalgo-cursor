@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 import threading
+import requests
+import json
+import os
+from datetime import datetime, timedelta
 
 # Import the refactored bot class and the strategy class to get defaults
 from .live_trader import LiveTradingBot
@@ -19,8 +23,16 @@ class LiveTraderGUI:
         # Get default parameters from the strategy class itself
         default_strategy = ModularIntradayStrategy()
 
+        # Cache file path for symbol-token mapping
+        self.cache_file = "smartapi/symbol_cache.json"
+
+        # Load symbol-token mapping from cache or online
+        self.symbol_token_map = self._load_symbol_token_map()
+        self.symbols_list = sorted(self.symbol_token_map.keys()) if self.symbol_token_map else []
+
         # --- GUI Variables ---
         self.instrument_token = tk.StringVar(value="26000") # Default to NIFTY 50
+        self.symbol_var = tk.StringVar()
         self.exchange_type = tk.StringVar(value="NSE_CM")
         self.feed_type = tk.StringVar(value="Quote") # Default to Quote for VWAP
         self.log_ticks = tk.BooleanVar(value=False) # Default to not logging ticks
@@ -59,6 +71,97 @@ class LiveTraderGUI:
         self.create_widgets()
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
 
+    def _load_symbol_token_map(self):
+        """Load symbol-token mapping from cache or online JSON file."""
+        # Check if cache exists
+        if os.path.exists(self.cache_file):
+            try:
+                with open(self.cache_file, 'r') as f:
+                    cache_data = json.load(f)
+                    symbol_token_map = cache_data.get('symbols', {})
+                    print(f"Loaded {len(symbol_token_map)} symbols from cache")
+                    return symbol_token_map
+            except Exception as e:
+                print(f"Error reading cache: {e}")
+        
+        # Cache doesn't exist, fetch from online
+        return self._fetch_and_cache_symbols()
+
+    def _fetch_and_cache_symbols(self):
+        """Fetch symbols from online and save to cache."""
+        try:
+            url = "https://margincalculator.angelbroking.com/OpenAPI_File/files/OpenAPIScripMaster.json"
+            print("Fetching symbols from online source...")
+            response = requests.get(url, timeout=15)
+            response.raise_for_status()
+            
+            # Parse the JSON data
+            data = response.json()
+            symbol_token_map = {}
+            
+            for item in data:
+                symbol = item.get('symbol', '')
+                token = item.get('token', '')
+                if symbol and token:
+                    symbol_token_map[symbol] = token
+            
+            # Save to cache
+            self._save_cache(symbol_token_map)
+            
+            print(f"Loaded {len(symbol_token_map)} symbols from online source and cached")
+            return symbol_token_map
+            
+        except Exception as e:
+            print(f"Error fetching symbols: {e}")
+            messagebox.showwarning("Warning", f"Could not load symbol list from online source: {e}\nYou can still manually enter the token.")
+            return {}
+
+    def _save_cache(self, symbol_token_map):
+        """Save symbol-token mapping to cache file."""
+        try:
+            # Ensure directory exists
+            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
+            
+            cache_data = {
+                'timestamp': datetime.now().isoformat(),
+                'symbols': symbol_token_map
+            }
+            
+            with open(self.cache_file, 'w') as f:
+                json.dump(cache_data, f, indent=2)
+                
+        except Exception as e:
+            print(f"Error saving cache: {e}")
+
+    def refresh_symbol_cache(self):
+        """Manually refresh the symbol cache from online source."""
+        print("Manually refreshing symbol cache...")
+        self.symbol_token_map = self._fetch_and_cache_symbols()
+        self.symbols_list = sorted(self.symbol_token_map.keys()) if self.symbol_token_map else []
+        
+        # Update the combobox values
+        if hasattr(self, 'symbol_combo'):
+            self.symbol_combo['values'] = self.symbols_list
+        
+        messagebox.showinfo("Cache Refresh", f"Symbol cache refreshed. Loaded {len(self.symbol_token_map)} symbols.")
+
+    def _on_symbol_select(self, event=None):
+        """When a symbol is selected from dropdown, update the token field."""
+        selected_symbol = self.symbol_var.get()
+        if selected_symbol in self.symbol_token_map:
+            token = self.symbol_token_map[selected_symbol]
+            self.instrument_token.set(token)
+            print(f"Selected symbol: {selected_symbol}, Token: {token}")
+
+    def _filter_symbols(self, event=None):
+        """Filter symbols based on user input for autocomplete."""
+        current_text = self.symbol_var.get().upper()
+        if current_text:
+            filtered_symbols = [s for s in self.symbols_list if current_text in s.upper()]
+            self.symbol_combo['values'] = filtered_symbols
+        else:
+            self.symbol_combo['values'] = self.symbols_list
+
     def create_widgets(self):
         notebook = ttk.Notebook(self.root)
         notebook.pack(pady=10, padx=10, fill="both", expand=True)
@@ -72,26 +175,35 @@ class LiveTraderGUI:
         notebook.add(f_risk, text='Risk & TP/SL')
 
         # --- Main Settings Frame ---
-        ttk.Label(f_main, text="Instrument Token:", font=('Helvetica', 10, 'bold')).grid(row=0, column=0, sticky="w", pady=5)
-        ttk.Entry(f_main, textvariable=self.instrument_token, width=15).grid(row=0, column=1, sticky="w")
+        ttk.Label(f_main, text="Symbol:", font=('Helvetica', 10, 'bold')).grid(row=0, column=0, sticky="w", pady=5)
+        self.symbol_combo = ttk.Combobox(f_main, textvariable=self.symbol_var, values=self.symbols_list, width=20)
+        self.symbol_combo.grid(row=0, column=1, sticky="w", padx=(0, 5))
+        self.symbol_combo.bind('<KeyRelease>', self._filter_symbols)
+        self.symbol_combo.bind('<<ComboboxSelected>>', self._on_symbol_select)
+        
+        # Add refresh cache button
+        ttk.Button(f_main, text="🔄 Refresh", command=self.refresh_symbol_cache, width=10).grid(row=0, column=2, sticky="w", padx=(0, 10))
 
-        ttk.Label(f_main, text="Exchange:", font=('Helvetica', 10, 'bold')).grid(row=1, column=0, sticky="w", pady=5)
+        ttk.Label(f_main, text="Instrument Token:", font=('Helvetica', 10, 'bold')).grid(row=1, column=0, sticky="w", pady=5)
+        ttk.Entry(f_main, textvariable=self.instrument_token, width=15).grid(row=1, column=1, sticky="w")
+
+        ttk.Label(f_main, text="Exchange:", font=('Helvetica', 10, 'bold')).grid(row=2, column=0, sticky="w", pady=5)
         exchange_map = {"NSE_CM": 1, "NSE_FO": 2, "BSE_CM": 3, "BSE_FO": 4, "MCX_FO": 5, "NCDEX_FO": 7}
         self.exchange_combo = ttk.Combobox(f_main, textvariable=self.exchange_type, values=list(exchange_map.keys()), width=12)
-        self.exchange_combo.grid(row=1, column=1, sticky="w")
+        self.exchange_combo.grid(row=2, column=1, sticky="w")
         
-        ttk.Label(f_main, text="Feed Type:", font=('Helvetica', 10, 'bold')).grid(row=2, column=0, sticky="w", pady=5)
+        ttk.Label(f_main, text="Feed Type:", font=('Helvetica', 10, 'bold')).grid(row=3, column=0, sticky="w", pady=5)
         feed_map = {"LTP": 1, "Quote": 2, "SnapQuote": 3}
         self.feed_combo = ttk.Combobox(f_main, textvariable=self.feed_type, values=list(feed_map.keys()), width=12)
-        self.feed_combo.grid(row=2, column=1, sticky="w")
+        self.feed_combo.grid(row=3, column=1, sticky="w")
 
-        ttk.Label(f_main, text="Initial Capital:").grid(row=3, column=0, sticky="w", pady=2)
-        ttk.Entry(f_main, textvariable=self.initial_capital, width=15).grid(row=3, column=1, sticky="w")
+        ttk.Label(f_main, text="Initial Capital:").grid(row=4, column=0, sticky="w", pady=2)
+        ttk.Entry(f_main, textvariable=self.initial_capital, width=15).grid(row=4, column=1, sticky="w")
 
-        ttk.Label(f_main, text="Exit Before Close (min):").grid(row=4, column=0, sticky="w", pady=2)
-        ttk.Entry(f_main, textvariable=self.exit_before_close, width=15).grid(row=4, column=1, sticky="w")
+        ttk.Label(f_main, text="Exit Before Close (min):").grid(row=5, column=0, sticky="w", pady=2)
+        ttk.Entry(f_main, textvariable=self.exit_before_close, width=15).grid(row=5, column=1, sticky="w")
 
-        ttk.Checkbutton(f_main, text="Log Live Ticks to Console", variable=self.log_ticks).grid(row=5, column=0, columnspan=2, sticky="w", pady=10)
+        ttk.Checkbutton(f_main, text="Log Live Ticks to Console", variable=self.log_ticks).grid(row=6, column=0, columnspan=2, sticky="w", pady=10)
 
         # --- Indicator Frame ---
         ttk.Checkbutton(f_indicators, text="Use Supertrend", variable=self.use_supertrend).grid(row=0, column=0, sticky="w")
@@ -140,6 +252,7 @@ class LiveTraderGUI:
 
         self.stop_button = ttk.Button(button_frame, text="Stop Trading", command=self.stop_trading, state="disabled")
         self.stop_button.pack(side="left", padx=5)
+
     def get_params_from_gui(self):
         """Collects all parameters from the GUI fields into a dictionary."""
         return {
@@ -174,12 +287,16 @@ class LiveTraderGUI:
 
         params = self.get_params_from_gui()
         
+        # Get the selected symbol for status display
+        selected_symbol = self.symbol_var.get()
+        
         self.bot_instance = LiveTradingBot(
             instrument_token=instrument,
             strategy_params=params,
             exchange_type=exchange_type_val,
             feed_mode=feed_type_val,
-            log_ticks=log_ticks_val
+            log_ticks=log_ticks_val,
+            symbol=selected_symbol  # Pass the symbol to the bot
         )
         self.bot_thread = threading.Thread(target=self.bot_instance.run, daemon=True)
         self.bot_thread.start()
