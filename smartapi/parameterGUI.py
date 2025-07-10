@@ -49,6 +49,12 @@ class StrategyParameterGUI:
             self.data_file.set(self.data_files[0])  # Set default value if files are available
         self.data_file_dropdown.bind("<KeyRelease>", self.autocomplete)  # Bind autocomplete
         row += 1
+        
+        # Add option to use price_ticks.log
+        ttk.Label(root, text="Or use price_ticks.log:").grid(row=row, column=0, sticky="e")
+        self.use_ticks_log = tk.BooleanVar(value=False)
+        ttk.Checkbutton(root, text="Use price_ticks.log instead", variable=self.use_ticks_log).grid(row=row, column=1, sticky="w")
+        row += 1
 
         # Indicator toggles
         ttk.Label(root, text="Indicators:").grid(row=row, column=0, sticky="w")
@@ -128,7 +134,7 @@ class StrategyParameterGUI:
             self.data_file_dropdown['values'] = new_values
 
     def run_backtest(self):
-        from backtest import ModularIntradayStrategy
+        from backtest import run_backtest_from_file
 
         params = {
             "use_supertrend": self.use_supertrend.get(),
@@ -150,30 +156,40 @@ class StrategyParameterGUI:
             "exit_before_close": self.exit_before_close.get(),
         }
 
-        # Load your CSV (adjust path if needed)
-        selected_file = self.data_file.get()
-        if not selected_file:
-            messagebox.showerror("Error", "Please select a data file.")
-            return
+        # Check if user wants to use price_ticks.log
+        if self.use_ticks_log.get():
+            ticks_log_path = os.path.join(os.path.dirname(__file__), "price_ticks.log")
+            if not os.path.exists(ticks_log_path):
+                messagebox.showerror("Error", "price_ticks.log not found in smartapi directory.")
+                return
+            
+            try:
+                # Run backtest using price_ticks.log
+                results, saved_files = run_backtest_from_file(ticks_log_path, params, 'ticks')
+            except Exception as e:
+                messagebox.showerror("Error", f"Error running backtest on price_ticks.log: {e}")
+                return
+        else:
+            # Use selected CSV file
+            selected_file = self.data_file.get()
+            if not selected_file:
+                messagebox.showerror("Error", "Please select a data file or check 'Use price_ticks.log'.")
+                return
 
-        csv_path = os.path.join(os.path.dirname(__file__), "data", selected_file)
-        try:
-            df = pd.read_csv(
-                csv_path,
-                parse_dates=['timestamp'],
-                date_parser=lambda x: pd.to_datetime(x, format='%Y%m%d %H:%M')
-            )
-            df.set_index('timestamp', inplace=True)
-        except FileNotFoundError:
-            messagebox.showerror("Error", f"File not found: {selected_file}")
-            return
-        except Exception as e:
-            messagebox.showerror("Error", f"Error loading data: {e}")
-            return
+            # Determine file path and type
+            csv_path = os.path.join(os.path.dirname(__file__), "data", selected_file)
+            
+            # Check if file exists
+            if not os.path.exists(csv_path):
+                messagebox.showerror("Error", f"File not found: {selected_file}")
+                return
 
-        # Run the strategy
-        strategy = ModularIntradayStrategy(params)
-        results = strategy.run_strategy(df)
+            try:
+                # Run backtest using the new engine
+                results, saved_files = run_backtest_from_file(csv_path, params, 'csv')
+            except Exception as e:
+                messagebox.showerror("Error", f"Error running backtest: {e}")
+                return
 
         # Show results
         if "error" not in results:
@@ -186,7 +202,7 @@ class StrategyParameterGUI:
             
             # 1. Save the detailed trades log
             trades_df = results['trades_df']
-            if not trades_df.empty:
+            if isinstance(trades_df, pd.DataFrame) and not trades_df.empty:
                 trades_filename = os.path.join(results_dir, f"trades_{timestamp_str}.csv")
                 trades_df.to_csv(trades_filename, index=False)
                 print(f"\n[SUCCESS] Detailed trades saved to: {trades_filename}")
@@ -203,7 +219,7 @@ class StrategyParameterGUI:
                 ["Avg Loss", f"{results['avg_loss']:.2f}"],
             ]
             summary_filename = os.path.join(results_dir, f"summary_{timestamp_str}.csv")
-            summary_df = pd.DataFrame(stats, columns=["Metric", "Value"])
+            summary_df = pd.DataFrame(stats, columns=pd.Index(["Metric", "Value"]))
             summary_df.to_csv(summary_filename, index=False)
             print(f"[SUCCESS] Summary statistics saved to: {summary_filename}")
             
@@ -223,7 +239,7 @@ class StrategyParameterGUI:
             print(tabulate(stats, tablefmt="github"))
 
             # Print sample trades as a table in the terminal
-            if len(results['trades_df']) > 0:
+            if isinstance(results['trades_df'], pd.DataFrame) and len(results['trades_df']) > 0:
                 print("\n=== SAMPLE TRADES ===")
                 print(tabulate(
                     results['trades_df'][['entry_price', 'exit_price', 'pnl',
@@ -232,10 +248,10 @@ class StrategyParameterGUI:
                 ))
 
             # Tabulate ENTRY/EXIT logs
-            if hasattr(strategy, "action_logs") and strategy.action_logs:
+            if hasattr(results, "action_logs") and results.get('action_logs'):
                 print("\n=== TRADE ACTION LOGS ===")
                 headers = ["Action", "Timestamp", "Price", "Size/Qty%", "PnL", "Reason"]
-                print(tabulate(strategy.action_logs, headers=headers, tablefmt="github"))
+                print(tabulate(results['action_logs'], headers=headers, tablefmt="github"))
         else:
             messagebox.showerror("Backtest Error", results["error"])
 

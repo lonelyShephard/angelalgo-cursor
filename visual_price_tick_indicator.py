@@ -105,6 +105,13 @@ class VisualPriceTickIndicator:
             sl = '-'
             bg_color = 'gray'
             self.position_active = False
+        elif status_info['status'] == 'API DOWN':
+            status = "API DOWN"
+            symbol = status_info.get('symbol', '-')
+            entry = '-'
+            sl = '-'
+            bg_color = 'yellow'
+            self.position_active = False
         elif status_info['status'] == 'IN POSITION':
             status = "IN POSITION"
             symbol = status_info.get('symbol', '-')
@@ -120,6 +127,13 @@ class VisualPriceTickIndicator:
             self.current_price = current_price
             in_profit = self.current_price > self.position_entry_price
             bg_color = 'green' if in_profit else 'red'
+        elif status_info['status'] == 'COLLECTING DATA':
+            status = "COLLECTING DATA"
+            symbol = status_info.get('symbol', '-')
+            entry = '-'
+            sl = '-'
+            bg_color = 'orange'
+            self.position_active = False
         else:
             status = "AWAITING SIGNAL"
             symbol = status_info.get('symbol', '-')
@@ -240,12 +254,97 @@ def close_visual_indicator():
         _visual_indicator.close()
         _visual_indicator = None
 
-def parse_live_trader_log(log_path=LIVE_TRADER_LOG_PATH):
-    if not os.path.exists(log_path):
+def parse_live_trader_log(log_path=None):
+    """
+    Parse the live trader log to get current status.
+    Robustly determine websocket connection status by comparing the most recent 'WebSocket Connection Opened' and 'WebSocket Connection Closed' events.
+    If the most recent event is 'Opened', consider the websocket connected.
+    If neither event is found but there are recent ticks, consider the API up.
+    Only show API DOWN if the most recent event is 'Closed' and there are no recent ticks.
+    """
+    import re
+    from datetime import datetime
+    # Try to find the current daily log file first
+    current_date = time.strftime('%Y-%m-%d')
+    daily_log_path = os.path.join('logs', current_date, 'app.log')
+    
+    # If daily log doesn't exist, try the fallback path
+    if not os.path.exists(daily_log_path):
+        daily_log_path = os.path.join('logs', current_date.replace('-', ''), 'app.log')
+    
+    # If still doesn't exist, use the original live_trader.log
+    if not os.path.exists(daily_log_path):
+        daily_log_path = log_path or LIVE_TRADER_LOG_PATH
+    
+    if not os.path.exists(daily_log_path):
         return None
+    
     try:
-        with open(log_path, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(daily_log_path, 'r', encoding='utf-8', errors='ignore') as f:
             lines = f.readlines()[-200:]  # Only check last 200 lines for speed
+        
+        # Find the most recent WebSocket Connection Opened/Closed events
+        last_opened_time = None
+        last_closed_time = None
+        for line in reversed(lines):
+            if 'WebSocket Connection Opened' in line:
+                if '[' in line and ']' in line:
+                    timestamp_str = line[line.find('[')+1:line.find(']')]
+                    try:
+                        log_time = datetime.strptime(timestamp_str, '%y%m%d %H:%M:%S')
+                        if last_opened_time is None or log_time > last_opened_time:
+                            last_opened_time = log_time
+                    except:
+                        continue
+            elif 'WebSocket Connection Closed' in line:
+                if '[' in line and ']' in line:
+                    timestamp_str = line[line.find('[')+1:line.find(']')]
+                    try:
+                        log_time = datetime.strptime(timestamp_str, '%y%m%d %H:%M:%S')
+                        if last_closed_time is None or log_time > last_closed_time:
+                            last_closed_time = log_time
+                    except:
+                        continue
+        # Determine websocket_connected by comparing last_opened_time and last_closed_time
+        websocket_connected = False
+        if last_opened_time and (not last_closed_time or last_opened_time > last_closed_time):
+            websocket_connected = True
+        elif last_closed_time and (not last_opened_time or last_closed_time > last_opened_time):
+            websocket_connected = False
+        # If neither event is found, leave websocket_connected as False for now
+        # Check for recent activity (if no ticks in last 2 minutes, API might be down)
+        current_time = time.time()
+        last_tick_time = None
+        # Check price_ticks.log for recent activity
+        if os.path.exists(PRICE_TICK_LOG):
+            try:
+                with open(PRICE_TICK_LOG, 'r', encoding='utf-8', errors='ignore') as f:
+                    f.seek(0, os.SEEK_END)
+                    filesize = f.tell()
+                    if filesize > 0:
+                        # Read last few lines to find last tick
+                        f.seek(max(filesize - 2048, 0))
+                        last_lines = f.read().splitlines()
+                        for line in reversed(last_lines):
+                            if line.strip() and ',' in line:
+                                try:
+                                    timestamp_str = line.split(',')[0]
+                                    if 'T' in timestamp_str:
+                                        tick_time = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+                                        last_tick_time = tick_time.timestamp()
+                                        break
+                                except:
+                                    continue
+            except:
+                pass
+        # If there are recent ticks (within 2 minutes), consider API UP regardless of websocket_connected
+        if last_tick_time and (current_time - last_tick_time) <= 120:
+            websocket_connected = True
+        # If neither websocket is connected nor recent ticks, consider API down
+        if not websocket_connected:
+            reason = 'No Recent Data' if not last_tick_time or (current_time - last_tick_time) > 120 else 'Connection Lost'
+            return {'status': 'API DOWN', 'symbol': 'Unknown', 'reason': reason}
+        # Parse normal status messages
         for line in reversed(lines):
             if 'STATUS:' in line:
                 if 'In Position' in line:
@@ -254,7 +353,6 @@ def parse_live_trader_log(log_path=LIVE_TRADER_LOG_PATH):
                     size_match = re.search(r'Size=(\d+)', line)
                     entry_match = re.search(r'Entry=([\d.]+)', line)
                     sl_match = re.search(r'Current SL=([\d.]+)', line)
-                    
                     if size_match and entry_match and sl_match:
                         size = int(size_match.group(1))
                         entry = float(entry_match.group(1))
@@ -266,10 +364,29 @@ def parse_live_trader_log(log_path=LIVE_TRADER_LOG_PATH):
                     symbol_match = re.search(r'Symbol=([^,]+)', line)
                     symbol = symbol_match.group(1) if symbol_match else 'Unknown'
                     return {'status': 'AWAITING SIGNAL', 'symbol': symbol}
+                elif 'Collecting initial bar data' in line:
+                    # Extract symbol from collecting data message
+                    symbol_match = re.search(r'Symbol=([^,]+)', line)
+                    symbol = symbol_match.group(1) if symbol_match else 'Unknown'
+                    return {'status': 'COLLECTING DATA', 'symbol': symbol}
+        # If no status found but we have recent ticks, assume awaiting signal
+        if last_tick_time and (current_time - last_tick_time) <= 120:
+            return {'status': 'AWAITING SIGNAL', 'symbol': 'Unknown'}
         return None
     except Exception as e:
+        print(f"Error parsing log file {daily_log_path}: {e}")
         return None
 
 if __name__ == "__main__":
-    indicator = VisualPriceTickIndicator()
+    import sys
+    initial_capital = 100000
+    log_path = "smartapi/price_ticks.log"
+    if len(sys.argv) > 1:
+        try:
+            initial_capital = int(sys.argv[1])
+        except Exception:
+            pass
+    if len(sys.argv) > 2:
+        log_path = sys.argv[2]
+    indicator = VisualPriceTickIndicator(initial_capital=initial_capital, log_path=log_path)
     indicator.run() 

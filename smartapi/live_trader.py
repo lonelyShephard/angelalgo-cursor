@@ -19,7 +19,7 @@ class LiveTradingBot:
         self.exchange_type = exchange_type
         self.feed_mode = feed_mode
         self.log_ticks = log_ticks
-        self.symbol = symbol or f"Token_{instrument_token}"  # Use symbol name or fallback to token
+        self.symbol = str(symbol) if symbol else f"Token_{instrument_token}"  # Ensure symbol is always a string
         self.strategy = None
         self.streamer = None
         self._stop_event = threading.Event()
@@ -86,9 +86,13 @@ class LiveTradingBot:
         elif bars_collected < min_bars_needed:
             status_msg = (
                 f"STATUS: Collecting initial bar data... "
-                f"({bars_collected}/{min_bars_needed} bars collected)"
+                f"({bars_collected}/{min_bars_needed} bars collected) | Symbol={self.symbol}"
             )
-            logger.info(status_msg)
+            print(f"DEBUG: bars_collected={bars_collected}, min_bars_needed={min_bars_needed}, symbol={self.symbol!r}")
+            try:
+                logger.info(status_msg)
+            except Exception as e:
+                print(f"Logging error: {e}, status_msg={status_msg!r}")
         else:
             latest_bar = bar_history[-1]
             st_trend = "Bull" if latest_bar.get('supertrend') == 1 else "Bear"
@@ -137,11 +141,10 @@ class LiveTradingBot:
                 for key, value in summary.items():
                     print(f"{key:<20}: {value}")
 
-                if not results['trades_df'].empty:
+                trades_df = results.get('trades_df')
+                if trades_df is not None and isinstance(trades_df, pd.DataFrame) and not trades_df.empty:
                     print("\n--- All Trades ---")
-                    print(tabulate(results['trades_df'], headers='keys', tablefmt='psql'))
-        
-        # Save raw tick data to CSV
+                    print(tabulate(trades_df, headers='keys', tablefmt='psql'))
         if self.tick_data_buffer:
             try:
                 # Construct the path to the 'data' folder within the 'smartapi' directory

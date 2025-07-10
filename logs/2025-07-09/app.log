@@ -1,0 +1,1188 @@
+[I 250709 09:22:57 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 09:22:58 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 09:22:58 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 2 with mode 2
+[I 250709 09:24:08 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 09:24:23 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 09:24:38 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 09:24:53 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 09:25:08 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 09:25:23 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 09:25:38 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 09:25:54 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 09:26:09 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 09:26:24 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 09:26:39 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 09:26:54 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 09:27:09 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 09:27:24 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 09:27:39 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 09:27:54 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 09:28:09 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 09:28:24 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 09:28:39 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 09:28:54 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 09:29:09 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 09:29:24 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 09:29:39 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 09:29:54 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 09:30:09 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 09:30:24 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 09:30:40 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 09:30:55 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 09:31:10 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 09:31:25 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 09:31:40 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 09:31:55 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 09:32:11 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 09:32:26 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 09:32:41 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 09:32:57 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 09:33:12 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 09:33:27 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 09:33:43 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 09:33:58 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 09:34:13 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 09:34:28 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 09:34:44 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 09:34:59 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 09:35:14 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 09:35:29 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 09:35:44 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 09:35:59 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 09:36:14 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 09:36:29 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 09:36:44 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 09:36:59 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 09:37:14 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 09:37:29 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 09:37:44 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 09:37:59 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 09:38:14 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 09:38:29 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 09:38:44 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 09:38:59 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 09:39:14 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 09:39:29 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 09:39:44 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 09:39:59 live_trader:91] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250709 09:40:14 live_trader:91] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250709 09:40:29 live_trader:91] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250709 09:40:44 live_trader:91] STATUS: Collecting initial bar data... (17/21 bars collected)
+[I 250709 09:41:00 live_trader:91] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250709 09:41:15 live_trader:91] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250709 09:41:30 live_trader:91] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250709 09:41:45 live_trader:91] STATUS: Collecting initial bar data... (18/21 bars collected)
+[I 250709 09:42:00 live_trader:91] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250709 09:42:15 live_trader:91] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250709 09:42:30 live_trader:91] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250709 09:42:45 live_trader:91] STATUS: Collecting initial bar data... (19/21 bars collected)
+[I 250709 09:43:00 live_trader:91] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250709 09:43:16 live_trader:91] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250709 09:43:32 live_trader:91] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250709 09:43:47 live_trader:91] STATUS: Collecting initial bar data... (20/21 bars collected)
+[I 250709 09:44:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:44:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:44:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:44:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:45:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:45:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:45:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:45:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:46:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:46:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:46:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:46:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:47:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:47:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:47:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:47:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:48:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:48:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:48:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:48:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:49:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:49:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:49:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:49:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:50:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:50:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:50:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:50:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:51:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:51:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:51:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:51:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 09:52:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:52:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:52:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 09:52:54 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:53:09 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:53:25 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:53:40 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:53:55 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:54:11 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:54:26 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:54:41 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:54:56 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:55:11 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:55:26 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:55:41 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:55:56 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:56:11 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=65.65
+[I 250709 09:56:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=72.65
+[I 250709 09:56:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=74.50
+[I 250709 09:56:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=75.60
+[I 250709 09:57:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=79.80
+[I 250709 09:57:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=79.80
+[I 250709 09:57:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=79.80
+[I 250709 09:57:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=79.80
+[I 250709 09:58:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=82.40
+[I 250709 09:58:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=82.40
+[I 250709 09:58:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=82.40
+[I 250709 09:58:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=82.40
+[I 250709 09:59:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=82.40
+[I 250709 09:59:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=84.75
+[I 250709 09:59:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=84.75
+[I 250709 09:59:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=84.75
+[I 250709 10:00:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=84.75
+[I 250709 10:00:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=84.75
+[I 250709 10:00:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=142, Entry=72.65, Current SL=84.75
+[I 250709 10:00:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:01:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:01:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:01:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:01:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:02:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:02:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:02:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:02:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:03:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:03:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:03:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:03:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:04:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:04:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:04:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:04:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:05:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:05:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:05:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:05:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:06:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:06:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:06:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:06:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:07:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:07:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:07:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:07:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:08:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:08:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:08:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:08:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:09:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:09:27 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:09:42 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:09:57 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:10:12 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=77.00
+[I 250709 10:10:28 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=85.90
+[I 250709 10:10:43 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=90.55
+[I 250709 10:10:58 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=91.70
+[I 250709 10:11:13 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=95.50
+[I 250709 10:11:28 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=145, Entry=84.00, Current SL=95.50
+[I 250709 10:11:43 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:11:58 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:12:13 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:12:28 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:12:43 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:12:58 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:13:13 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:13:28 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:13:43 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:13:58 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:14:13 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:14:28 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:14:43 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:14:58 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=88.30
+[I 250709 10:15:13 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=99.65
+[I 250709 10:15:28 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=99.65
+[I 250709 10:15:43 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=99.85
+[I 250709 10:15:58 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=99.85
+[I 250709 10:16:13 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=147, Entry=95.30, Current SL=99.85
+[I 250709 10:16:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:16:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:16:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:17:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:17:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:17:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:17:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:18:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:18:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:18:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:18:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:19:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:19:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:19:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:19:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:20:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:20:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:20:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:20:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:21:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:21:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:21:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:21:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:22:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:22:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:22:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:22:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:23:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:23:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:23:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:23:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:24:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:24:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:24:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:24:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:25:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:25:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:25:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:25:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:26:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:26:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:26:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:26:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:27:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:27:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:27:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:27:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:28:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:28:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:28:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:28:59 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:29:14 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:29:29 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:29:44 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=148, Entry=100.35, Current SL=93.35
+[I 250709 10:29:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:30:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:30:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:30:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:30:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:31:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:31:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:31:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:31:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:32:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:32:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:32:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:32:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:33:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:33:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:33:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:33:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:34:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:34:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:34:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:34:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:35:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:35:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:35:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:35:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:36:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:36:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:36:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:36:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:37:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:37:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:37:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:37:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:38:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:38:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:38:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:38:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:39:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:39:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:39:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:39:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:40:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:40:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:40:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:40:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:41:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:41:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:41:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:41:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:42:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:42:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:42:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:42:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:43:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:43:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:43:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:43:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:44:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:44:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:44:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:44:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:45:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:45:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:45:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:45:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:46:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:46:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:46:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:46:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:47:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:47:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:47:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:47:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:48:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:48:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:48:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:48:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:49:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:49:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:49:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:49:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:50:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:50:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:50:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:50:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:51:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:51:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:51:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:52:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:52:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:52:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:52:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:53:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:53:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:53:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:53:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:54:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:54:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:54:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:54:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:55:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:55:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:55:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:55:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:56:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:56:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:56:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:56:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:57:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:57:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:57:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:57:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:58:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:58:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:58:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:58:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:59:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:59:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:59:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 10:59:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:00:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:00:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:00:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:00:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:01:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:01:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:01:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:01:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:02:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:02:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:02:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:02:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:03:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:03:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:03:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:03:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:04:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:04:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:04:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:04:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:05:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:05:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:05:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:05:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:06:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:06:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:06:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:06:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:07:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:07:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:07:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:07:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:08:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:08:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:08:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:08:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:09:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:09:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:09:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:09:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:10:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:10:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:10:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:10:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:11:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:11:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:11:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:11:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:12:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:12:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:12:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:12:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:13:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:13:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:13:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:13:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:14:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:14:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:14:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:14:47 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:15:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:15:17 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:15:32 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:15:47 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:16:02 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:16:17 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:16:32 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:16:47 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:17:02 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:17:17 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:17:32 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:17:47 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:18:02 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:18:17 live_trader:85] STATUS: In Position | Symbol=NIFTY10JUL2525500CE, Size=146, Entry=106.55, Current SL=99.55
+[I 250709 11:18:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:18:47 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:19:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:19:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:19:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:19:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:20:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:20:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:20:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:20:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:21:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:21:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:21:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:21:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:22:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:22:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:22:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:22:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:23:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:23:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:23:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:23:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:24:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:24:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:24:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:24:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:25:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:25:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:25:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:25:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:26:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:26:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:26:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:26:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:27:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:27:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:27:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:27:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:28:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:28:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:28:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:28:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:29:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:29:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:29:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:29:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:30:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:30:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:30:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:30:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:31:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:31:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:31:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:31:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:32:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:32:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:32:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:32:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:33:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:33:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:33:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:33:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:34:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:34:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:34:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:34:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:35:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:35:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:35:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:35:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:36:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:36:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:36:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:36:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:37:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:37:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:37:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:37:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:38:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:38:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:38:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:38:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:39:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:39:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:39:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:39:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:40:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:40:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:40:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:40:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:41:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:41:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:41:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:41:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:42:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:42:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:42:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:42:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:43:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:43:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:43:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:43:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:44:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:44:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:44:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:44:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:45:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:45:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:45:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:45:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:46:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:46:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:46:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:46:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:47:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:47:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:47:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:47:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:48:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:48:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:48:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:48:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:49:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:49:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:49:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:49:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:50:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:50:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:50:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:50:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:51:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:51:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:51:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:51:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:52:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:52:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:52:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:52:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:53:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:53:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:53:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:53:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:54:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 11:54:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 11:54:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 11:54:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 11:55:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:55:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:55:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:55:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:56:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:56:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:56:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:56:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:57:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:57:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:57:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:57:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:58:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:58:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:58:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:58:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:59:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:59:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:59:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 11:59:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:00:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:00:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:00:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:00:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:01:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:01:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:01:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:01:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:02:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:02:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:02:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:02:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:03:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:03:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:03:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:03:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:04:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:04:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:04:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:04:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 12:05:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:05:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:05:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:05:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:06:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:06:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:06:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:06:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:07:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:07:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:07:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:07:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:08:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:08:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:08:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:08:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:09:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:09:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:09:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:09:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:10:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:10:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:10:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:10:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:11:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:11:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:11:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:11:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:12:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:12:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:12:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:12:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:13:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:13:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:13:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:13:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:14:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:14:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:14:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:14:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:15:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:15:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:15:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:15:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:16:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:16:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:16:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:16:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:17:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:17:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:17:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:17:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:18:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:18:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:18:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:18:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:19:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:19:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:19:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:19:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:20:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:20:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:20:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:20:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:21:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:21:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:21:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:21:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:22:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:22:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:22:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:22:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:23:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:23:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:23:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:23:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:24:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:24:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:24:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:24:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:25:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:25:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:25:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:25:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:26:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:26:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:26:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:26:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:27:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:27:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:27:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:27:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:28:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:28:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:28:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:28:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:29:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:29:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:29:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:29:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:30:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:30:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:30:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:30:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:31:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:31:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:31:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:31:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:32:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:32:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:32:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:32:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:33:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:33:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:33:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:33:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:34:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:34:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:34:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:34:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:35:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:35:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:35:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:35:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:36:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:36:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:36:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:36:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:37:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:37:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:37:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:37:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:38:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:38:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:38:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:38:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:39:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:39:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:39:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:39:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:40:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:40:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:40:41 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:40:56 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:41:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:41:26 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:41:41 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:41:56 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:42:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:42:26 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:42:41 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:42:57 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:43:12 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:43:27 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:43:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:43:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:44:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:44:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:44:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:45:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:45:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:45:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:45:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:46:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:46:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:46:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:46:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:47:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:47:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:47:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:47:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:48:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:48:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:48:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:48:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:49:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:49:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:49:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:49:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:50:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:50:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:50:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:50:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:51:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:51:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:51:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:51:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:52:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:52:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:52:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:52:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:53:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:53:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:53:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:53:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:54:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:54:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:54:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:54:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:55:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:55:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:55:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:55:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:56:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:56:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:56:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:56:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:57:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:57:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:57:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:57:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:58:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:58:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:58:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:58:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:59:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:59:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:59:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 12:59:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:00:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:00:26 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:00:41 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:00:56 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:01:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:01:27 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:01:42 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:01:57 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:02:12 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:02:27 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:02:42 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:02:57 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:03:12 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:03:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:03:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:03:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:04:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:04:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:04:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:04:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:05:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:05:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:05:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:05:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:06:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:06:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:06:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:06:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:07:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:07:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:07:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:07:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:08:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:08:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:08:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:08:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:09:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:09:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:09:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:09:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:10:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:10:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:10:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:11:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:11:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:11:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:11:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:12:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:12:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:12:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:12:47 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:13:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:13:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:13:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:13:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:14:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:14:18 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:14:33 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:14:48 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:15:03 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:15:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:15:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:15:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:16:04 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:16:19 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:16:34 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:16:49 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:17:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:17:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:17:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:17:50 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:18:05 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:18:20 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:18:35 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:18:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:19:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:19:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:19:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:19:51 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:20:06 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:20:21 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:20:36 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:20:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:21:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:21:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:21:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:21:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:22:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:22:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:22:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:22:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:23:07 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:23:22 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:23:37 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:23:52 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:24:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:24:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:24:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:24:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:25:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:25:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:25:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:25:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:26:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:26:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:26:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:26:53 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:27:08 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:27:23 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:27:38 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:27:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:28:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:28:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:28:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:28:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:29:09 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:29:24 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:29:39 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:29:54 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:30:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:30:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:30:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:30:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:31:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:31:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:31:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:31:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:32:10 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:32:25 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:32:40 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:32:55 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:33:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:33:26 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:33:41 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:33:56 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:34:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:34:26 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:34:41 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:34:56 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:35:11 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:35:26 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:35:42 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:35:57 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:36:12 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:36:27 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:36:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:36:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:37:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:37:28 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:37:43 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:37:58 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:38:13 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:38:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:38:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:38:59 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:39:14 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:39:29 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:39:44 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:40:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:40:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:40:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:40:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:41:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:41:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:41:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:41:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:42:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:42:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:42:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:42:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:43:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:43:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:43:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:43:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:44:00 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:44:15 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:44:30 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:44:45 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:45:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:45:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:45:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:45:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:46:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:46:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:46:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:46:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bull, HTF: Bear
+[I 250709 13:47:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:47:16 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:47:31 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:47:46 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:48:01 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:48:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:48:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:48:47 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:49:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:49:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:49:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:49:47 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:50:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:50:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:50:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:50:47 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:51:02 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:51:17 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 13:51:32 live_trader:108] STATUS: Awaiting signal | Symbol=NIFTY10JUL2525500CE, Supertrend: Bear, EMA: Bear, RSI: N/A, VWAP: Bear, HTF: Bear
+[I 250709 14:14:57 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 14:14:57 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 14:14:57 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 1 with mode 2
+[I 250709 14:37:03 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 14:37:03 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 14:37:03 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 2 with mode 2
+[I 250709 14:37:57 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:38:12 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:38:27 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:38:42 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:38:57 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:39:12 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:39:28 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:39:43 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:39:58 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:40:13 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:40:28 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:40:43 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:40:58 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:41:13 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:41:28 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:41:43 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:41:58 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:42:13 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:42:28 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:42:43 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:42:58 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:43:13 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:43:28 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:43:43 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:43:58 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 14:44:13 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 14:44:28 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 14:44:43 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 14:44:58 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 14:45:13 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 14:45:28 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 14:45:43 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 14:45:58 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 14:46:13 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 14:46:28 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 14:46:43 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 14:46:58 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 14:53:21 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 14:53:22 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 14:53:22 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 2 with mode 2
+[I 250709 14:54:03 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:54:18 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:54:33 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:54:48 live_trader:91] STATUS: Collecting initial bar data... (1/21 bars collected)
+[I 250709 14:55:03 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:55:18 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:55:33 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:55:48 live_trader:91] STATUS: Collecting initial bar data... (2/21 bars collected)
+[I 250709 14:56:03 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:56:18 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:56:33 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:56:48 live_trader:91] STATUS: Collecting initial bar data... (3/21 bars collected)
+[I 250709 14:57:03 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:57:18 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:57:34 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:57:49 live_trader:91] STATUS: Collecting initial bar data... (4/21 bars collected)
+[I 250709 14:58:04 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:58:19 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:58:34 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:58:49 live_trader:91] STATUS: Collecting initial bar data... (5/21 bars collected)
+[I 250709 14:59:04 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:59:19 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:59:34 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 14:59:49 live_trader:91] STATUS: Collecting initial bar data... (6/21 bars collected)
+[I 250709 15:00:04 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 15:00:19 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 15:00:34 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 15:00:49 live_trader:91] STATUS: Collecting initial bar data... (7/21 bars collected)
+[I 250709 15:01:04 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 15:01:19 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 15:01:34 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 15:01:49 live_trader:91] STATUS: Collecting initial bar data... (8/21 bars collected)
+[I 250709 15:02:04 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 15:02:19 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 15:02:34 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 15:02:49 live_trader:91] STATUS: Collecting initial bar data... (9/21 bars collected)
+[I 250709 15:03:04 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 15:03:19 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 15:03:34 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 15:03:49 live_trader:91] STATUS: Collecting initial bar data... (10/21 bars collected)
+[I 250709 15:04:04 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 15:04:19 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 15:04:34 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 15:04:49 live_trader:91] STATUS: Collecting initial bar data... (11/21 bars collected)
+[I 250709 15:05:04 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 15:05:19 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 15:05:34 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 15:05:49 live_trader:91] STATUS: Collecting initial bar data... (12/21 bars collected)
+[I 250709 15:06:04 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 15:06:19 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 15:06:34 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 15:06:49 live_trader:91] STATUS: Collecting initial bar data... (13/21 bars collected)
+[I 250709 15:07:04 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 15:07:19 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 15:07:34 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 15:07:49 live_trader:91] STATUS: Collecting initial bar data... (14/21 bars collected)
+[I 250709 15:08:04 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 15:08:19 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 15:08:34 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 15:08:49 live_trader:91] STATUS: Collecting initial bar data... (15/21 bars collected)
+[I 250709 15:09:04 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 15:09:19 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 15:09:34 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 15:09:49 live_trader:91] STATUS: Collecting initial bar data... (16/21 bars collected)
+[I 250709 15:12:12 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 15:12:12 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 15:12:12 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 1 with mode 2
+[I 250709 15:21:10 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 15:21:10 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 15:21:10 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 1 with mode 2
+[I 250709 15:38:03 websocket_stream:153] Connecting to WebSocket feed...
+[I 250709 15:38:04 websocket_stream:75] WebSocket Connection Opened.
+[I 250709 15:38:04 websocket_stream:84] Subscribing to tokens: ['40049'] on exchange type 2 with mode 2

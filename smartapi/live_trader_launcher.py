@@ -253,6 +253,12 @@ class LiveTraderGUI:
         self.stop_button = ttk.Button(button_frame, text="Stop Trading", command=self.stop_trading, state="disabled")
         self.stop_button.pack(side="left", padx=5)
 
+        # --- Status Monitor Button ---
+        status_frame = ttk.Frame(self.root)
+        status_frame.pack(pady=5)
+        self.status_button = ttk.Button(status_frame, text="📊 Open Status Monitor", command=self.open_status_monitor)
+        self.status_button.pack(side="left", padx=5)
+
     def get_params_from_gui(self):
         """Collects all parameters from the GUI fields into a dictionary."""
         return {
@@ -335,6 +341,41 @@ class LiveTraderGUI:
             self.pause_button.config(state="normal")
             self.resume_button.config(state="disabled")
             messagebox.showinfo("Status", "Data stream resumed.")
+
+    def open_status_monitor(self):
+        """Opens the visual price tick indicator for status monitoring as a separate process."""
+        import subprocess
+        import sys
+        import os
+
+        # Find the absolute path to visual_price_tick_indicator.py
+        script_path = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), '..', 'visual_price_tick_indicator.py')
+        )
+
+        # Use the current Python executable
+        python_exe = sys.executable
+
+        # Pass initial_capital and log_path as arguments if needed
+        initial_capital = str(self.initial_capital.get())
+        log_path = os.path.abspath("smartapi/price_ticks.log")
+
+        try:
+            # Launch as a new process
+            subprocess.Popen(
+                [python_exe, script_path, initial_capital, log_path],
+                close_fds=True
+            )
+            # Optionally, show a message
+            from tkinter import messagebox
+            messagebox.showinfo(
+                "Status Monitor",
+                "Status monitor opened in a new window!\n\n"
+                "Close the monitor window to stop monitoring."
+            )
+        except Exception as e:
+            from tkinter import messagebox
+            messagebox.showerror("Error", f"Failed to open status monitor: {e}")
 
     def on_closing(self):
         """Handles the event of closing the GUI window."""
